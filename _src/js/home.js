@@ -49,12 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Ngăn mất slide khi click + drag
-document.querySelectorAll('.swiper-slide').forEach(slide => {
-  slide.addEventListener('dragstart', e => e.preventDefault());
-  slide.addEventListener('mousedown', e => e.preventDefault());
-});
-
 /*=============================
   Slider Google Pixel 10
 ===============================*/
