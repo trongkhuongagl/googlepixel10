@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@use "sass:math";
+@use "common/00_base/_00_index" as *;
+
+.sec-google-pixel10 {
+  padding: 50px 0;
+  background-color: #E5EDF8;
+  .title {
+    .en {
+      font-size: 90px;
+      font-weight: 500;
+    }
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 50px;
+  }
+  .slider-gg-pixel10 {
+    .swiper-slide {
+      width: 1200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 80px;
+      background: #F3F6FF;
+      border-radius: 12px;
+      .info {
+        flex: 1;
+      }
+      .head-ja {
+        font-size: 22px;
+        font-weight: 700;
+        text-align: center;
+      }
+      .head-en {
+        font-size: 50px;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      .desc {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      .num {
+        font-size: 10px;
+      }
+      .lead {
+        font-size: 35px;
+        color: #CC0033;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      .image {
+        width: 498px;
+        padding-top: 40px;
+        padding-right: 50px;
+      }
+    }
+  }
+}

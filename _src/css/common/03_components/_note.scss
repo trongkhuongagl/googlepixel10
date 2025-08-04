@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@use "sass:math";
+@use "common/00_base/_00_index" as *;
+
+.c-note01 {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  .row {
+    display: flex;
+    gap: vw-min(5);
+    &:not(:first-of-type) {
+      margin-top: vw-min(10);
+    }
+  }
+  .number,
+  .text {
+    font-size: vw-min(12);
+    font-weight: 400;
+  }
+  .link {
+    color: #CC0033;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

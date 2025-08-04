@@ -2,9 +2,29 @@
 @use "sass:math";
 @use "common/00_base/_00_index" as *;
 
-.sec_webcm {
+.sec-webcm {
   padding: 50px 0;
+  .title,
+  .desc {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .title {
+    font-size: 90px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .desc {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 10px;
+    margin-bottom: 50px;
+  }
   .swiper-slide {
+    width: 800px;
     display: flex;
     justify-content: center;
     align-items: center;

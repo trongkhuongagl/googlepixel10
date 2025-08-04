@@ -315,6 +315,31 @@ sub {
   margin: 0 !important;
 }
 
+.c-note01 {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+.c-note01 .row {
+  display: flex;
+  gap: min(0.3472222222vw, 5px);
+}
+.c-note01 .row:not(:first-of-type) {
+  margin-top: min(0.6944444444vw, 10px);
+}
+.c-note01 .number,
+.c-note01 .text {
+  font-size: min(0.8333333333vw, 12px);
+  font-weight: 400;
+}
+.c-note01 .link {
+  color: #CC0033;
+  text-decoration: underline;
+}
+.c-note01 .link:hover {
+  text-decoration: none;
+}
+
 .u-nobr {
   display: inline-block;
 }
@@ -421,10 +446,30 @@ sub {
   padding-top: min(7.1527777778vw, 103px);
 }
 
-.sec_webcm {
+.sec-webcm {
   padding: 50px 0;
 }
-.sec_webcm .swiper-slide {
+.sec-webcm .title,
+.sec-webcm .desc {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+.sec-webcm .title {
+  font-size: 90px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5;
+}
+.sec-webcm .desc {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 10px;
+  margin-bottom: 50px;
+}
+.sec-webcm .swiper-slide {
+  width: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -437,6 +482,65 @@ sub {
   -webkit-user-select: none;
   -ms-user-select: none;
   -webkit-tap-highlight-color: transparent;
+}
+
+.sec-google-pixel10 {
+  padding: 50px 0;
+  background-color: #E5EDF8;
+}
+.sec-google-pixel10 .title {
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 50px;
+}
+.sec-google-pixel10 .title .en {
+  font-size: 90px;
+  font-weight: 500;
+}
+.sec-google-pixel10 .slider-gg-pixel10 .swiper-slide {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  background: #F3F6FF;
+  border-radius: 12px;
+}
+.sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .info {
+  flex: 1;
+}
+.sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .head-ja {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+.sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .head-en {
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .desc {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .num {
+  font-size: 10px;
+}
+.sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .lead {
+  font-size: 35px;
+  color: #CC0033;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .image {
+  width: 498px;
+  padding-top: 40px;
+  padding-right: 50px;
 }
 @media screen and (max-width: 767px) {
   body {
