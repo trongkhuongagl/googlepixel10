@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@use "sass:math";
+@use "common/00_base/_00_index" as *;
+
+.c-swiper-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: fit-content;
+  margin: 20px auto 0;
+  .swiper-button-next,
+  .swiper-button-prev,
+  .swiper-pagination {
+    position: static;
+    width: fit-content;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    &::after {
+      font-size: 25px;
+    }
+    margin-top: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #CC0033;
+    color: #fff;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #CC0033;
+    margin: 0 !important;
+  }
+}

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@use "sass:math";
+@use "common/00_base/_00_index" as *;
+
+.sec_webcm {
+  padding: 50px 0;
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #C4C4C4;
+    font-size: 24px;
+    border-radius: 12px;
+    height: 400px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
