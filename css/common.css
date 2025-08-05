@@ -542,6 +542,27 @@ sub {
   padding-top: 40px;
   padding-right: 50px;
 }
+.sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide {
+  width: 500px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide .image {
+  padding: 30px 10px 0 50px;
+  margin-bottom: 20px;
+}
+.sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide .info {
+  padding: 0 50px 40px 50px;
+}
+.sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide .desc {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide .num {
+  font-size: 10px;
+}
 @media screen and (max-width: 767px) {
   body {
     font-size: 3.0534351145vw;

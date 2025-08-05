@@ -61,4 +61,28 @@
       }
     }
   }
+
+  .slider-gg-pixel10-02 {
+    .swiper-slide {
+      width: 500px;
+      background: #FFFFFF;
+      border-radius: 12px;
+      overflow: hidden;
+      .image {
+        padding: 30px 10px 0 50px;
+        margin-bottom: 20px;
+      }
+      .info {
+        padding: 0 50px 40px 50px;
+      }
+      .desc {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      .num {
+        font-size: 10px;
+      }
+    }
+  }
 }

@@ -85,6 +85,41 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /*=============================
+  Slider Google Pixel 10 - 02
+===============================*/
+document.addEventListener("DOMContentLoaded", () => {
+  const swiper = new Swiper(".js_slider_gg_pixel10_02", {
+    slidesPerView: 'auto',
+    spaceBetween: 40,
+    // centeredSlides: true,
+    // loop: true,
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        spaceBetween: 20
+      },
+      480: {
+        spaceBetween: 20
+      },
+      768: {
+        spaceBetween: 30
+      },
+      1440: {
+        spaceBetween: 40
+      }
+    }
+  });
+});
+
+/*=============================
   Animation Fade Up
 ===============================*/
 document.addEventListener("DOMContentLoaded", () => {
