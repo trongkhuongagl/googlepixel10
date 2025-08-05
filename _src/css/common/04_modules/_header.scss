@@ -42,17 +42,11 @@
       justify-content: center;
       align-items: center;
       gap: vw-min(50);
-      @include mq('small') {
-        gap: vw-s(10);
-      }
       .item {
         display: inline-flex;
         &:not(:first-child) {
           border-left: 2px solid #ECECEC;
           padding-left: vw-min(50);
-          @include mq('small') {
-            padding-left: vw-s(10);
-          }
         }
       }
       .link {
@@ -60,10 +54,10 @@
         font-weight: 700;
         color: #202124;
         line-height: 1.5;
-        @include mq('small') {
-          font-size: vw-s(12);
-        }
       }
+    }
+    @include mq('small') {
+      display: none;
     }
   }
 

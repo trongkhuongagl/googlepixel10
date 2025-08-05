@@ -3,20 +3,25 @@
 @use "common/00_base/_00_index" as *;
 
 .c-note01 {
-  max-width: 1440px;
-  width: 100%;
+  width: vw-min(1200);
   margin: 0 auto;
   .row {
     display: flex;
     gap: vw-min(5);
     &:not(:first-of-type) {
-      margin-top: vw-min(10);
+      margin-top: vw-min(14);
     }
   }
   .number,
   .text {
-    font-size: vw-min(12);
+    font-size: vw-min(14);
     font-weight: 400;
+    line-height: 1.5;
+    color: #3C4043;
+
+    @include mq('small') {
+      font-size: vw-s(10);
+    }
   }
   .link {
     color: #CC0033;

@@ -3,39 +3,60 @@
 @use "common/00_base/_00_index" as *;
 
 .sec-webcm {
-  padding: 50px 0;
+  padding: vw-min(100) 0;
+
+  @include mq('small') {
+    padding-top: vw-s(46);
+    padding-bottom: vw-s(60);
+  }
   .title,
   .desc {
-    max-width: 1400px;
-    width: 100%;
+    width: vw-min(1400);
+    color: #202124;
     margin: 0 auto;
+    line-height: 1;
+    text-align: center;
   }
   .title {
-    font-size: 90px;
-    font-weight: 700;
-    text-align: center;
-    line-height: 1.5;
+    font-size: vw-min(76);
+    font-weight: 500;
+    margin-bottom: vw-min(18);
+
+    @include mq('small') {
+      font-size: vw-s(55);
+      margin-bottom: vw-s(17);
+    }
   }
   .desc {
-    font-size: 30px;
+    font-size: vw-min(32);
     font-weight: 700;
-    text-align: center;
-    letter-spacing: 10px;
-    margin-bottom: 50px;
+    margin-bottom: vw-min(38);
+
+    @include mq('small') {
+      font-size: vw-s(22);
+      margin-bottom: vw-s(34);
+    }
   }
   .swiper-slide {
-    width: 800px;
+    width: vw-min(800);
     display: flex;
     justify-content: center;
     align-items: center;
     background: #C4C4C4;
-    font-size: 24px;
-    border-radius: 12px;
-    height: 400px;
+    font-size: vw-min(24);
+    border-radius: vw-min(5);
+    height: vw-min(400);
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
     -webkit-tap-highlight-color: transparent;
+
+    @include mq('small') {
+      width: vw-s(335);
+      height: vw-s(186);
+      font-size: vw-s(24);
+      border-radius: vw-s(5);
+    }
   }
 }

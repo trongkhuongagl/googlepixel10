@@ -60,7 +60,7 @@
 }
 
 @function vw-s($value) {
-	@return calc($value / 393 * 100vw);
+	@return calc($value / 375 * 100vw);
 }
 
 @function vw-min($px, $design-width: 1440) {
