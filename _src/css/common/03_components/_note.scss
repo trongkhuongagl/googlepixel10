@@ -7,9 +7,15 @@
   margin: 0 auto;
   .row {
     display: flex;
-    gap: vw-min(5);
+    gap: vw-min(10);
     &:not(:first-of-type) {
-      margin-top: vw-min(14);
+      margin-top: vw-min(10);
+    }
+    @include mq('small') {
+      gap: vw-s(8);
+      &:not(:first-of-type) {
+        margin-top: vw-s(10);
+      }
     }
   }
   .number,

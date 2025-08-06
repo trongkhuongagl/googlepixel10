@@ -28,6 +28,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="preload" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="preload" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/special_contents/smartphone/pixel10/css/common.css">
     <script src="/special_contents/smartphone/pixel10/js/home.js" defer></script>
@@ -70,13 +72,43 @@
       </div>
 
       <section class="sec-webcm">
-        <h2 class="title">WEB CM</h2>
+        <h2 class="f-noto title">WEB CM</h2>
         <p class="desc">「・・・・・・・・・・」篇</p>
         <div class="js_slider_webcm swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide" data-video-id="ZR_6Z1IDD8s">
+              <div class="image">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="/special_contents/smartphone/pixel10/images/webcm_img_01_sp.png" width="335" height="186">
+                  <img src="/special_contents/smartphone/pixel10/images/webcm_img_01.png" width="802" height="186" alt="" class="c_img_cover">
+                </picture>
+              </div>
+              <span class="icon">
+                <img src="/special_contents/smartphone/pixel10/images/ico_play.svg" width="60" height="60" alt="" class="c_img_cover">
+              </span>
+            </div>
+            <div class="swiper-slide" data-video-id="ZR_6Z1IDD8s">
+              <div class="image">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="/special_contents/smartphone/pixel10/images/webcm_img_01_sp.png" width="335" height="186">
+                  <img src="/special_contents/smartphone/pixel10/images/webcm_img_01.png" width="802" height="186" alt="" class="c_img_cover">
+                </picture>
+              </div>
+              <span class="icon">
+                <img src="/special_contents/smartphone/pixel10/images/ico_play.svg" width="60" height="60" alt="" class="c_img_cover">
+              </span>
+            </div>
+            <div class="swiper-slide" data-video-id="ZR_6Z1IDD8s">
+              <div class="image">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="/special_contents/smartphone/pixel10/images/webcm_img_01_sp.png" width="335" height="186">
+                  <img src="/special_contents/smartphone/pixel10/images/webcm_img_01.png" width="802" height="186" alt="" class="c_img_cover">
+                </picture>
+              </div>
+              <span class="icon">
+                <img src="/special_contents/smartphone/pixel10/images/ico_play.svg" width="60" height="60" alt="" class="c_img_cover">
+              </span>
+            </div>
           </div>
           <div class="c-swiper-nav">
             <div class="swiper-button-prev"></div>
@@ -84,26 +116,43 @@
             <div class="swiper-button-next"></div>
           </div>
         </div>
+
+        <!-- Popup Video -->
+        <div class="popup-video" id="popup_video">
+          <div class="popup-overlay"></div>
+          <div class="popup-content">
+            <span class="popup-close">
+              <img src="/special_contents/smartphone/pixel10/images/ico_close.svg" width="42" height="42" alt="" class="c_img_cover">
+            </span>
+            <iframe id="youtube_frame" src="" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
       </section>
 
       <section class="sec-google-pixel10">
-        <h2 class="title"><span class="en">Google Pixel 10</span>で<br>日常をアップデートしよう!</h2>
+        <h2 class="title"><span class="en">Google</span>の<br class="sp">最新AIスマホが<br class="sp">ドコモから</h2>
+
         <div class="js_slider_gg_pixel10 slider-gg-pixel10 swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper-slide-gg-pixel10-pro">
               <div class="content">
                 <div class="info">
-                  <p class="head-ja">Pixelシリーズ史上最も高性能なスマホがドコモから</p>
-                  <p class="head-en">Google Pixel 10 Pro</p>
-                  <p class="desc">驚異的な高性能カメラ、最先端AI、長時間バッテリーを<br>ハイスペックメモリで、かつてないほど高速かつ快適に使用できます。<span class="num">(*1)</span></p>
+                  <p class="head-ja">Pixelシリーズ史上最も<br class="sp">高性能なスマホがドコモから</p>
+                  <p class="head-en">
+                    <img src="/special_contents/smartphone/pixel10/images/title_gg_pixel_10_pro.svg" width="1090" height="128" alt="Google Pixel 10 Pro" class="c_img_cover"></span>
+                  </p>
+                  <p class="desc">驚異的な高性能カメラ、最先端AI、<br class="sp">長時間バッテリーをハイスペックメモリで、<br class="sp">かつてないほど高速かつ快適に使用できます。<span class="num">(*1)</span></p>
                   <p class="lead">新登場</p>
-                  <a href="#" class="c-button01 button">製品詳細はこちら</a>
+                  <a target="_blank" href="#" class="c-button01 button">製品詳細はこちら</a>
                 </div>
                 <div class="image">
-                  <img src="/special_contents/smartphone/pixel10/images/google_pixel10_img_01.png" width="498" height="424" alt="">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="/special_contents/smartphone/pixel10/images/google_pixel10_pro_img_01_sp.jpg" width="670" height="1000">
+                    <img src="/special_contents/smartphone/pixel10/images/google_pixel10_pro_img_01.jpg" width="2400" height="920" alt="" class="c_img_cover">
+                  </picture>
                 </div>
               </div>
-              <div class="c-note01 notes">
+              <div class="c-note01 notes-01">
                 <div class="row">
                   <span class="number">※1</span>
                   <p class="text">
@@ -111,38 +160,28 @@
                   </p>
                 </div>
               </div>
-
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper-slide-gg-pixel10">
               <div class="content">
                 <div class="info">
-                  <p class="head-ja">Pixelシリーズ史上最も高性能なスマホがドコモから</p>
-                  <p class="head-en">Google Pixel 10 Pro</p>
-                  <p class="desc">驚異的な高性能カメラ、最先端AI、長時間バッテリーを<br>ハイスペックメモリで、かつてないほど高速かつ快適に使用できます。<span class="num">(*1)</span></p>
+                  <p class="head-ja">Googleの最新AIスマホが<br class="sp">ドコモから</p>
+                  <p class="head-en">
+                    <img src="/special_contents/smartphone/pixel10/images/title_gg_pixel_10.svg" width="865" height="129" alt="Google Pixel 10 Pro" class="c_img_cover"></span>
+                  </p>
+                  <p class="desc">驚異のパワーを備えたPixel 10 新登場。<br>新しいTensor G5チップで<br class="sp">高度なAIがさらに進化。</p>
                   <p class="lead">新登場</p>
-                  <a href="#" class="c-button01 button">製品詳細はこちら</a>
+                  <a target="_blank" href="#" class="c-button01 button">製品詳細はこちら</a>
                 </div>
                 <div class="image">
-                  <img src="/special_contents/smartphone/pixel10/images/google_pixel10_img_01.png" width="498" height="424" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="content">
-                <div class="info">
-                  <p class="head-ja">Pixelシリーズ史上最も高性能なスマホがドコモから</p>
-                  <p class="head-en">Google Pixel 10 Pro</p>
-                  <p class="desc">驚異的な高性能カメラ、最先端AI、長時間バッテリーを<br>ハイスペックメモリで、かつてないほど高速かつ快適に使用できます。<span class="num">(*1)</span></p>
-                  <p class="lead">新登場</p>
-                  <a href="#" class="c-button01 button">製品詳細はこちら</a>
-                </div>
-                <div class="image">
-                  <img src="/special_contents/smartphone/pixel10/images/google_pixel10_img_01.png" width="498" height="424" alt="">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="/special_contents/smartphone/pixel10/images/google_pixel10_img_01_sp.jpg" width="670" height="1000">
+                    <img src="/special_contents/smartphone/pixel10/images/google_pixel10_img_01.jpg" width="2400" height="920" alt="" class="c_img_cover">
+                  </picture>
                 </div>
               </div>
             </div>
           </div>
-          <div class="c-swiper-nav">
+          <div class="c-swiper-nav swiper-nav">
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-next"></div>
@@ -151,41 +190,63 @@
 
         <div class="js_slider_gg_pixel10_02 slider-gg-pixel10-02 swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="image">
-                <img src="/special_contents/smartphone/pixel10/images/google_pixel10_img_02.png" width="444" height="506" alt="">
+            <div class="swiper-slide swiper-slide-01">
+              <p class="head">
+                <img src="/special_contents/smartphone/pixel10/images/google_pixel10_slider_title_01.svg" width="230" height="55" alt="Gemini" class="c_img_cover">
+              </p>
+              <div class="image-01">
+                <img src="/special_contents/smartphone/pixel10/images/google_pixel10_slider_img_01.svg" width="400" height="230" alt="Gemini" class="c_img_cover">
+                <span class="popup">
+                  <img src="/special_contents/smartphone/pixel10/images/google_pixel10_slider_pop_01.svg" width="184" height="123" alt="今見ているものについてGeminiと会話" class="c_img_cover">
+                </span>
               </div>
-              <div class="info">
-                <p class="desc">Gemini Live を使って、自然で自由な会話を<span class="num">※1</span>。口頭で Gemini に、情報の収集やアイデア出し、複数のアプリを横断した操作を依頼できます※2。また、画面を共有したり、画像、ファイル、YouTube 動画を追加したりして、Gemini との会話を深めることも可能です。</p>
-                <a href="#" class="c-button01 is-no-icon button">製品詳細はこちら</a>
+              <div class="image-02">
+                <img src="/special_contents/smartphone/pixel10/images/google_pixel10_slider_img_01-2.jpg" width="400" height="210" alt="" class="c_img_cover">
               </div>
+              <p class="desc">Gemini Live を使って、自然で自由な会話を<span class="num">※1</span>。口頭で Gemini に、情報の収集やアイデア出し、複数のアプリを横断した操作を依頼できます<span class="num">※2</span>。また、画面を共有したり、画像、ファイル、YouTube 動画を追加したりして、Gemini との会話を深めることも可能です。</p>
+              <a href="#" class="c-button01 is-no-icon button">製品詳細はこちら</a>
             </div>
-            <div class="swiper-slide">
-              <div class="image">
-                <img src="/special_contents/smartphone/pixel10/images/google_pixel10_img_03.png" width="444" height="506" alt="">
+            <div class="swiper-slide swiper-slide-02">
+              <p class="head">AIカメラ</p>
+              <div class="image-01">
+                <img src="/special_contents/smartphone/pixel10/images/google_pixel10_slider_img_02.svg" width="400" height="230" alt="AIカメラ" class="c_img_cover">
+                <span class="popup">
+                  <img src="/special_contents/smartphone/pixel10/images/google_pixel10_slider_pop_02.svg" width="184" height="123" alt="エモい写真を撮影したいあなたへ" class="c_img_cover">
+                </span>
               </div>
-              <div class="info">
-                <p class="desc">Gemini Live を使って、自然で自由な会話を<span class="num">※1</span>。口頭で Gemini に、情報の収集やアイデア出し、複数のアプリを横断した操作を依頼できます※2。また、画面を共有したり、画像、ファイル、YouTube 動画を追加したりして、Gemini との会話を深めることも可能です。</p>
-                <a href="#" class="c-button01 is-no-icon button">製品詳細はこちら</a>
+              <div class="image-02">
+                <img src="/special_contents/smartphone/pixel10/images/google_pixel10_slider_img_02-2.jpg" width="400" height="210" alt="" class="c_img_cover">
               </div>
+              <p class="desc">「カメラコーチ」機能を使えば、撮影しようとするシーンを Gemini モデルで読み取り、最適なアングルや光の使い方など、撮影のアドバイスを受けられます。また、その写真にぴったりなモードを提案してくれる機能もあります<span class="num">※3。</span></p>
+              <a href="#" class="c-button01 is-no-icon button">製品詳細はこちら</a>
             </div>
-            <div class="swiper-slide">
-              <div class="image">
-                <img src="/special_contents/smartphone/pixel10/images/google_pixel10_img_02.png" width="444" height="506" alt="">
+            <div class="swiper-slide swiper-slide-03">
+              <p class="head">AIバッテリー</p>
+              <div class="image-01">
+                <img src="/special_contents/smartphone/pixel10/images/google_pixel10_slider_img_03.svg" width="400" height="230" alt="AIバッテリー" class="c_img_cover">
+                <span class="popup">
+                  <img src="/special_contents/smartphone/pixel10/images/google_pixel10_slider_pop_03.svg" width="184" height="123" alt="急速充電できる長時間駆動バッテリー" class="c_img_cover">
+                </span>
               </div>
-              <div class="info">
-                <p class="desc">Gemini Live を使って、自然で自由な会話を<span class="num">※1</span>。口頭で Gemini に、情報の収集やアイデア出し、複数のアプリを横断した操作を依頼できます※2。また、画面を共有したり、画像、ファイル、YouTube 動画を追加したりして、Gemini との会話を深めることも可能です。</p>
-                <a href="#" class="c-button01 is-no-icon button">製品詳細はこちら</a>
+              <div class="image-02">
+                <img src="/special_contents/smartphone/pixel10/images/google_pixel10_slider_img_03-2.jpg" width="400" height="210" alt="" class="c_img_cover">
               </div>
+              <p class="desc">Google Pixel 10 の長時間駆動バッテリーは 24 時間以上持続し、スーパー バッテリー セーバーを使えば最長 100 時間まで延長可能<span class="num">※4</span>。充電時間も短く、約 30 分程度で 55 % まで充電できます<span class="num">※5</span>。さらに、Google Pixelsnapマグネット技術により、充電器にピタッと装着させてワイヤレス充電をすることも簡単です。</p>
+              <a href="#" class="c-button01 is-no-icon button">製品詳細はこちら</a>
             </div>
-            <div class="swiper-slide">
-              <div class="image">
-                <img src="/special_contents/smartphone/pixel10/images/google_pixel10_img_03.png" width="444" height="506" alt="">
+            <div class="swiper-slide swiper-slide-04">
+              <p class="head">AIバッテリー</p>
+              <div class="image-01">
+                <img src="/special_contents/smartphone/pixel10/images/google_pixel10_slider_img_04.svg" width="400" height="230" alt="AIバッテリー" class="c_img_cover">
+                <span class="popup">
+                  <img src="/special_contents/smartphone/pixel10/images/google_pixel10_slider_pop_04.svg" width="184" height="123" alt="マイボイス通訳で海外旅行もあんしん！" class="c_img_cover">
+                </span>
               </div>
-              <div class="info">
-                <p class="desc">Gemini Live を使って、自然で自由な会話を<span class="num">※1</span>。口頭で Gemini に、情報の収集やアイデア出し、複数のアプリを横断した操作を依頼できます※2。また、画面を共有したり、画像、ファイル、YouTube 動画を追加したりして、Gemini との会話を深めることも可能です。</p>
-                <a href="#" class="c-button01 is-no-icon button">製品詳細はこちら</a>
+              <div class="image-02">
+                <img src="/special_contents/smartphone/pixel10/images/google_pixel10_slider_img_04-2.jpg" width="400" height="210" alt="" class="c_img_cover">
               </div>
+              <p class="desc">マイボイス通訳で、通話中にそれぞれが話すことをその場で翻訳し、その内容を本人の声で再現できるようになりました。異なる言語を使った電話での会話がさらに自然に感じられます<span class="num">※6</span>。</p>
+              <a href="#" class="c-button01 is-no-icon button">製品詳細はこちら</a>
             </div>
           </div>
           <div class="c-swiper-nav">
@@ -193,53 +254,109 @@
             <div class="swiper-pagination"></div>
             <div class="swiper-button-next"></div>
           </div>
+        </div>
+
+        <div class="c-note01 notes-02">
+          <div class="row">
+            <span class="number">※1</span>
+            <p class="text">
+              使用状況によって変化する場合があります。回答の正確性をお確かめください。一部の機能とアカウントに対応しています。インターネット接続が必要です。一部の国と言語でのみ利用でき、対象年齢は 18 歳以上です。
+            </p>
+          </div>
+          <div class="row">
+            <span class="number">※2</span>
+            <p class="text">
+              インターネット接続が必要です。利用できる機能は、サブスクリプションやアカウントによって異なる場合があります。一部のアプリについてはセットアップが必要です。一部の国と言語で利用可能です。詳しくは、<a target="_blank" href="https://gemini.google.com/u/2/faq" class="link">https://gemini.google.com/u/2/faq</a> をご覧ください。
+            </p>
+          </div>
+          <div class="row">
+            <span class="number">※3</span>
+            <p class="text">
+              使用状況によって結果は変化する場合があります。
+            </p>
+          </div>
+          <div class="row">
+            <span class="number">※4</span>
+            <p class="text">
+              バッテリー駆動時間はさまざまな要因によって変動し、特定の機能を使用すると短くなります。実際のバッテリー駆動時間はこれより短くなる可能性があります。バッテリーは寿命が長く持続するよう、そのパフォーマンスは Google Pixel のソフトウェアにより継続的に管理されます。詳しくは、<a target="_blank" href="https://g.co/pixel/battery-tests" class="link">g.co/pixel/battery-tests</a> および <a target="_blank" href="https://g.co/pixel/batteryhealth" class="link">g.co/pixel/batteryhealth</a>をご覧ください。
+            </p>
+          </div>
+          <div class="row">
+            <span class="number">※5</span>
+            <p class="text">
+              有線での充電速度は、コンセントに接続した Google 45W USB-C® 充電器の使用を前提としています。実際の速度はこれより遅い可能性があります。アダプターは別売りです。詳しくは、<a target="_blank" href="https://g.co/pixel/battery-tests" class="link">g.co/pixel/battery-tests</a> と <a target="_blank" href="https://g.co/pixel/batteryhealth" class="link">g.co/pixel/batteryhealth</a>をご覧ください。
+            </p>
+          </div>
+        </div>
+
+        <div class="c-button02 button">
+          <p class="c-button02-title">さらに進化した Google Pixel 10 で<br class="pc">日常をアップデートしよう!</p>
+          <a href="#" class="c-button02-link">
+            Google Pixel 10 の<br class="sp">詳細はこちら
+            <span class="c-button02-bubble">今すぐ<br>チェック!</span>
+            <span class="c-button02-bg"></span>
+          </a>
         </div>
       </section>
 
       <section class="sec-google-pixel-watch">
-        <h2 class="title"><span class="en">Google Pixel Watch 4</span>で<br>健康管理を次のレベルへ！</h2>
+        <h2 class="title">
+          <span class="en">
+            <picture>
+              <source media="(max-width: 767px)" srcset="/special_contents/smartphone/pixel10/images/title_gg_pixel_watch_4_sp.svg" width="625" height="240">
+              <img src="/special_contents/smartphone/pixel10/images/title_gg_pixel_watch_4.svg" width="1262" height="128" alt="Google Pixel Watch 4" class="c_img_cover">
+            </picture>
+          </span><br class="sp">
+          で<br class="pc">健康管理を次のレベルへ！
+        </h2>
+
+        <div class="bg">
+          <img src="/special_contents/smartphone/pixel10/images/google_pixel_watch_bg_01.png" width="1280" height="1280" alt="" class="c_w_100">
+        </div>
 
         <div class="js_slider_gg_pixel_watch slider-gg-pixel-watch swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper-slide-01">
               <p class="head">アプリと連携し<br>運動を管理</p>
-              <div class="image">
-                <img src="/special_contents/smartphone/pixel10/images/google_pixel_watch_img_01.png" width="444" height="392" alt="">
+              <div class="image-01">
+                <img src="/special_contents/smartphone/pixel10/images/google_pixel_watch_slider_img_01.svg" width="400" height="180" alt="かしこいトレーニングは、ここから" class="c_img_cover">
+                <span class="popup">
+                  <img src="/special_contents/smartphone/pixel10/images/google_pixel_watch_slider_pop_01.svg" width="184" height="123" alt="手首のコーチが応援してくれるから、モチベ上がるね！" class="c_img_cover">
+                </span>
               </div>
-              <div class="info">
-                <p class="desc">Fitbit アプリの新しいランニング ダッシュボードでは、走った距離、自己記録、過去のランニングなど、パフォーマンスに関するデータを 1 か所で確認できます※1。</p>
-                <a href="#" class="c-button01 is-no-icon button">詳細はこちら</a>
+              <div class="image-02">
+                <img src="/special_contents/smartphone/pixel10/images/google_pixel_watch_slider_img_01-2.png" width="400" height="210" alt="" class="c_img_cover">
               </div>
+              <p class="desc">Fitbit アプリの新しいランニング ダッシュボードでは、走った距離、自己記録、過去のランニングなど、パフォーマンスに関するデータを 1 か所で確認できます<span class="num">※1</span>。</p>
+              <a href="#" class="c-button01 is-no-icon button">詳細はこちら</a>
             </div>
-            <div class="swiper-slide">
-              <p class="head">アプリと連携し<br>運動を管理</p>
-              <div class="image">
-                <img src="/special_contents/smartphone/pixel10/images/google_pixel_watch_img_02.png" width="444" height="392" alt="">
+            <div class="swiper-slide swiper-slide-02">
+              <p class="head">健康増進を叶える、<br>先進的なアプローチ</p>
+              <div class="image-01">
+                <img src="/special_contents/smartphone/pixel10/images/google_pixel_watch_slider_img_02.svg" width="400" height="180" alt="健康増進を叶える、先進的なアプローチ" class="c_img_cover">
+                <span class="popup">
+                  <img src="/special_contents/smartphone/pixel10/images/google_pixel_watch_slider_pop_02.svg" width="184" height="123" alt="忙しい毎日だから健康チェックは欠かせないね！" class="c_img_cover">
+                </span>
               </div>
-              <div class="info">
-                <p class="desc">Fitbit アプリの新しいランニング ダッシュボードでは、走った距離、自己記録、過去のランニングなど、パフォーマンスに関するデータを 1 か所で確認できます※1。</p>
-                <a href="#" class="c-button01 is-no-icon button">詳細はこちら</a>
+              <div class="image-02">
+                <img src="/special_contents/smartphone/pixel10/images/google_pixel_watch_slider_img_02-2.png" width="400" height="210" alt="" class="c_img_cover">
               </div>
+              <p class="desc">Google Pixel Watch 4 では、高精度の心拍数測定、総合的なアプローチによるストレス管理、睡眠データの記録、眠りの質の改善に役立つ分析といった機能に加え、血中酸素ウェルネスや HRV などの主要な健康指標を活用して、ご自身の健康への理解を深めることができます<span class="num">※2、※3、※4、※5</span>。</p>
+              <a href="#" class="c-button01 is-no-icon button">詳細はこちら</a>
             </div>
-            <div class="swiper-slide">
-              <p class="head">アプリと連携し<br>運動を管理</p>
-              <div class="image">
-                <img src="/special_contents/smartphone/pixel10/images/google_pixel_watch_img_01.png" width="444" height="392" alt="">
+            <div class="swiper-slide swiper-slide-03">
+              <p class="head">いつものアプリが<br>手元でも使える</p>
+              <div class="image-01">
+                <img src="/special_contents/smartphone/pixel10/images/google_pixel_watch_slider_img_03.svg" width="400" height="180" alt="いつものアプリが手元でも使える" class="c_img_cover">
+                <span class="popup">
+                  <img src="/special_contents/smartphone/pixel10/images/google_pixel_watch_slider_pop_03.svg" width="184" height="123" alt="すぐにメールチェックできるから便利だね！" class="c_img_cover">
+                </span>
               </div>
-              <div class="info">
-                <p class="desc">Fitbit アプリの新しいランニング ダッシュボードでは、走った距離、自己記録、過去のランニングなど、パフォーマンスに関するデータを 1 か所で確認できます※1。</p>
-                <a href="#" class="c-button01 is-no-icon button">詳細はこちら</a>
+              <div class="image-02">
+                <img src="/special_contents/smartphone/pixel10/images/google_pixel_watch_slider_img_03-2.png" width="400" height="210" alt="" class="c_img_cover">
               </div>
-            </div>
-            <div class="swiper-slide">
-              <p class="head">アプリと連携し<br>運動を管理</p>
-              <div class="image">
-                <img src="/special_contents/smartphone/pixel10/images/google_pixel_watch_img_02.png" width="444" height="392" alt="">
-              </div>
-              <div class="info">
-                <p class="desc">Fitbit アプリの新しいランニング ダッシュボードでは、走った距離、自己記録、過去のランニングなど、パフォーマンスに関するデータを 1 か所で確認できます※1。</p>
-                <a href="#" class="c-button01 is-no-icon button">詳細はこちら</a>
-              </div>
+              <p class="desc">どこに行くときも Google の機能と一緒に。オフラインで Google マップを確認したり、支払いや交通機関の利用の際はもちろん、チケットとして Google ウォレットを使ったりと、何かと重宝します。さらに、Gemini によるサポートを移動中も利用できます※6、<span class="num">※7</span>。</p>
+              <a href="#" class="c-button01 is-no-icon button">詳細はこちら</a>
             </div>
           </div>
           <div class="c-swiper-nav">
@@ -249,7 +366,7 @@
           </div>
         </div>
 
-        <div class="c-note01 notes">
+        <div class="c-note01 notes-03">
           <div class="row">
             <span class="number">※1</span>
             <p class="text">
@@ -296,16 +413,19 @@
 
         <div class="banner">
           <a href="#" class="banner-link">
-            <img src="/special_contents/smartphone/pixel10/images/google_pixel_watch_banner_01.jpg" width="1880" height="160" alt="" class="c_w_100">
+            <picture>
+              <source media="(max-width: 767px)" srcset="/special_contents/smartphone/pixel10/images/google_pixel_watch_banner_01_sp.png" width="670" height="105">
+              <img src="/special_contents/smartphone/pixel10/images/google_pixel_watch_banner_01.png" width="1880" height="160" alt="スマホから離れても快適な日常が続く!ワンナンバーサービスもうひとつのスマート途切れない日常を">
+            </picture>
           </a>
         </div>
 
-        <div class="c-button02">
-          <p class="c-button02-title">さらに進化した Google Pixel 10 で<br>日常をアップデートしよう!</p>
+        <div class="c-button02 button">
+          <p class="c-button02-title">Google Pixel<br class="sp"> Watch 4 で<br>健康管理を<br class="sp">次のレベルへ</p>
           <a href="#" class="c-button02-link">
-            Google Pixel 10 の詳細はこちら
-            <span class="c-button02-bubble">今すぐ<br>チェック!</span>
-            <span class="bg"></span>
+            Google Pixel 10 の<br class="sp">詳細はこちら
+            <span class="c-button02-bubble is-lighter">今すぐ<br>チェック!</span>
+            <span class="c-button02-bg"></span>
           </a>
         </div>
       </section>
@@ -314,58 +434,26 @@
         <div class="sec-plan-inner">
           <h2 class="title">
             <picture>
-              <source media="(max-width: 767px)" srcset="/special_contents/smartphone/pixel10/images/plan_title_01_sp.png" width="911" height="474">
-              <img src="/special_contents/smartphone/pixel10/images/plan_title_01.png" width="2155" height="407" alt="NEW ドコモMAX ドコモポイ活MAX" class="c_img_100">
+              <source media="(max-width: 767px)" srcset="/special_contents/smartphone/pixel10/images/plan_title_01_sp.svg" width="304" height="91">
+              <img src="/special_contents/smartphone/pixel10/images/plan_title_01.svg" width="1008" height="70" alt="NEW ドコモMAX ドコモポイ活MAX" class="c_img_cover">
             </picture>
           </h2>
-          <div class="content">
-            <ul class="list-01">
-              <li class="item">
-                <div class="image">
-                  <img src="/special_contents/smartphone/pixel10/images/plan_logo_01.svg" width="138" height="138" alt="DAZN">
-                </div>
-                <p class="head">ドコモで<br>DAZN見放題！</p>
-              </li>
-              <li class="item">
-                <p class="head">追加料金なし!</p>
-                <p class="desc">※追加有料コンテンツはご視聴いただけません</p>
-              </li>
-            </ul>
-            <ul class="list-02">
-              <li class="item">
-                <div class="head">
-                  <p class="text">200以上の国と地域で<br>国際ローミングが</p>
-                  <p class="text is-large">30GBまで無料!</p>
-                </div>
-                <div class="image">
-                  <img src="/special_contents/smartphone/pixel10/images/plan_logo_02.svg" width="100" height="81" alt="200以上の国と地域で国際ローミングが30GBまで無料!">
-                </div>
-              </li>
-              <li class="item">
-                <div class="head">
-                  <p class="text">ドコモからのご登録で<br>最大6か月間</p>
-                  <p class="text is-large">追加料金なし!</p>
-                </div>
-                <p class="desc"><span>※</span>他Amazonプライム割引特典重畳不可。<br>7か月目～600円</p>
-                <div class="image">
-                  <img src="/special_contents/smartphone/pixel10/images/plan_logo_03.svg" width="217" height="47" alt="ドコモからのご登録で最大6か月間追加料金なし!">
-                </div>
-              </li>
-              <li class="item">
-                <div class="head">
-                  <p class="text">ドコモを10年以上ご利用の方は</p>
-                  <p class="text is-large">おトク!</p>
-                </div>
-                <p class="desc"><span>※</span>ドコモ MAXでご利用データ量が<br>1GB以下/月の場合は対象外<br>(2025年9月ご利用分まで)</p>
-                <div class="image">
-                  <img src="/special_contents/smartphone/pixel10/images/plan_logo_04.svg" width="104" height="82" alt="ドコモを10年以上ご利用の方はおトク!">
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="button-wrap">
-            <a href="#" target="_blank" class="c-button01">詳しくはこちら</a>
-          </div>
+          <p class="title-sub">うれしい<span class="red">特典</span>が充実！</p>
+          <ul class="list">
+            <li class="item">
+              <img src="/special_contents/smartphone/pixel10/images/plan_img_01.svg" width="298" height="217" alt="200以上の国と地域で国際ローミングが30GBまで無料！！" class="c_img_cover">
+            </li>
+            <li class="item">
+              <img src="/special_contents/smartphone/pixel10/images/plan_img_02.svg" width="298" height="217" alt="DAZN 追加料金なし！※追加有料コンテンツは視聴不可。" class="c_img_cover">
+            </li>
+            <li class="item">
+              <img src="/special_contents/smartphone/pixel10/images/plan_img_03.svg" width="298" height="217" alt="amazon prime ドコモからのご登録で、最大6ヶ月間追加料金なし！※他 Amazonプライム割引特典重畳不可。7か月目〜600円（税込）" class="c_img_cover">
+            </li>
+            <li class="item">
+              <img src="/special_contents/smartphone/pixel10/images/plan_img_04.svg" width="298" height="217" alt="ドコモを長くご利用の方はおトク！※ドコモ MAXでご利用データ量が1GB以下/月の場合は対象外（2025年9月ご利用分まで）" class="c_img_cover">
+            </li>
+          </ul>
+          <a href="#" target="_blank" class="c-button01 button">ドコモ MAXの詳細はこちら</a>
         </div>
       </section>
 
