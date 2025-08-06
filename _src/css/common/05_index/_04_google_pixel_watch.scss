@@ -54,6 +54,17 @@
 
   .slider-gg-pixel-watch {
     margin-bottom: vw-min(45);
+
+    &.swiper-no-swiping {
+      .swiper-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: vw-min(30);
+      }
+      .c-swiper-nav {
+        display: none;
+      }
+    }
   }
 
   .swiper-slide {

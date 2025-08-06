@@ -739,6 +739,14 @@ sub {
 .sec-google-pixel-watch .slider-gg-pixel-watch {
   margin-bottom: min(3.125vw, 45px);
 }
+.sec-google-pixel-watch .slider-gg-pixel-watch.swiper-no-swiping .swiper-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: min(2.0833333333vw, 30px);
+}
+.sec-google-pixel-watch .slider-gg-pixel-watch.swiper-no-swiping .c-swiper-nav {
+  display: none;
+}
 .sec-google-pixel-watch .swiper-slide {
   width: min(34.7222222222vw, 500px);
   min-height: min(56.9444444444vw, 820px);

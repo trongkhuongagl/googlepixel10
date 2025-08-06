@@ -157,37 +157,68 @@ document.addEventListener("DOMContentLoaded", () => {
   Slider Google Pixel Watch
 ===============================*/
 document.addEventListener("DOMContentLoaded", () => {
-  const swiper = new Swiper(".js_slider_gg_pixel_watch", {
-    slidesPerView: 'auto',
-    spaceBetween: 40,
-    // centeredSlides: true,
-    loop: true,
+  const sliderEl = document.querySelector(".js_slider_gg_pixel_watch");
+  const slides = sliderEl.querySelectorAll(".swiper-slide");
+  const space = 30; // default spaceBetween
 
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      320: {
-        spaceBetween: 20,
-        centeredSlides: true,
-      },
-      480: {
-        spaceBetween: 20,
-        centeredSlides: true,
-      },
-      768: {
-        spaceBetween: 30,
-        centeredSlides: true,
-      },
-      1440: {
-        spaceBetween: 30
+  function initSwiper() {
+    // Tính tổng chiều rộng slide
+    let totalWidth = 0;
+    slides.forEach(slide => {
+      totalWidth += slide.offsetWidth;
+    });
+    totalWidth += (slides.length - 1) * space;
+
+    const containerWidth = sliderEl.offsetWidth;
+
+    // Nếu tổng chiều rộng < container => không khởi tạo Swiper
+    if (totalWidth <= containerWidth) {
+      sliderEl.classList.add("swiper-no-swiping"); // hiển thị bình thường
+      if (sliderEl.swiper) {
+        sliderEl.swiper.destroy(true, true);
       }
+      return;
     }
+
+    // Ngược lại, init Swiper nếu chưa init
+    if (!sliderEl.swiper) {
+      new Swiper(sliderEl, {
+        slidesPerView: 'auto',
+        spaceBetween: 40,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          320: {
+            spaceBetween: 20,
+            centeredSlides: true,
+          },
+          480: {
+            spaceBetween: 20,
+            centeredSlides: true,
+          },
+          768: {
+            spaceBetween: 30,
+            centeredSlides: true,
+          },
+          1440: {
+            spaceBetween: 30
+          }
+        }
+      });
+    }
+  }
+
+  // Init và recheck khi resize
+  initSwiper();
+  window.addEventListener("resize", () => {
+    initSwiper();
   });
 });
 
