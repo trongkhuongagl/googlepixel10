@@ -43,12 +43,20 @@
     width: vw-min(1440);
     margin: 0 auto;
 
+    .js_slider_webcm {
+      display: none;
+
+      &.slick-initialized {
+        display: block;
+      }
+    }
+
     @include mq('small') {
       width: vw-s(375);
     } 
   }
 
-  .swiper-slide {
+  .slide {
     width: vw-min(800);
     height: vw-min(445);
     display: flex;
@@ -63,7 +71,12 @@
     -webkit-user-select: none;
     -ms-user-select: none;
     -webkit-tap-highlight-color: transparent;
+    margin: 0 vw-min(20);
     position: relative;
+
+    @include mq('small') {
+      margin: 0 vw-s(10);
+    }
 
     .image {
       width: 100%;

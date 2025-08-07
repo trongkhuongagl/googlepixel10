@@ -29,6 +29,7 @@
     <link href="https://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i&display=swap" rel="preload" as="style">
     <link href="https://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="/special_contents/smartphone/pixel10/css/common.css">
     <script src="/special_contents/smartphone/pixel10/js/home.js" defer></script>
   </head>
@@ -72,9 +73,10 @@
       <section class="sec-webcm">
         <h2 class="f-google title">WEB CM</h2>
         <p class="desc">「・・・・・・・・・・」篇</p>
-        <div class="js_slider_webcm slider-webcm swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
+        
+        <div class="slider-webcm slider-webcm_inner">
+          <div class="js_slider_webcm">
+            <div class="slide" data-video-id="ZR_6Z1IDD8s">
               <div class="image">
                 <picture>
                   <source media="(max-width: 767px)" srcset="/special_contents/smartphone/pixel10/images/webcm_img_01_sp.png" width="335" height="186">
@@ -85,7 +87,7 @@
                 <img src="/special_contents/smartphone/pixel10/images/ico_play.svg" width="60" height="60" alt="" class="c_img_cover">
               </span>
             </div>
-            <div class="swiper-slide">
+            <div class="slide" data-video-id="ZR_6Z1IDD8s">
               <div class="image">
                 <picture>
                   <source media="(max-width: 767px)" srcset="/special_contents/smartphone/pixel10/images/webcm_img_01_sp.png" width="335" height="186">
@@ -96,7 +98,7 @@
                 <img src="/special_contents/smartphone/pixel10/images/ico_play.svg" width="60" height="60" alt="" class="c_img_cover">
               </span>
             </div>
-            <div class="swiper-slide">
+            <div class="slide" data-video-id="ZR_6Z1IDD8s">
               <div class="image">
                 <picture>
                   <source media="(max-width: 767px)" srcset="/special_contents/smartphone/pixel10/images/webcm_img_01_sp.png" width="335" height="186">
@@ -108,12 +110,13 @@
               </span>
             </div>
           </div>
-          <div class="c-swiper-nav">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
+          <div class="c-slick-nav">
+            <button class="js_slider_webcm_prev">Prev</button>  
+            <div class="js_slider_webcm_dots"></div>
+            <button class="js_slider_webcm_next">Next</button>
           </div>
         </div>
+
       </section>
 
       <section id="google_pixel10" class="sec-google-pixel10">
@@ -525,6 +528,8 @@
       </ul>
     </aside>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>

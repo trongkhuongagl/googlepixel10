@@ -18,36 +18,55 @@ document.addEventListener('DOMContentLoaded', function () {
 /*=============================
   Slider WEB CM
 ===============================*/
+// document.addEventListener("DOMContentLoaded", () => {
+//   const swiper = new Swiper(".js_slider_webcm", {
+//     slidesPerView: 'auto',
+//     spaceBetween: 40,
+//     centeredSlides: true,
+//     loop: true,
+//     navigation: {
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev",
+//     },
+//     pagination: {
+//       el: ".swiper-pagination",
+//       clickable: true,
+//     },
+//     breakpoints: {
+//       320: {
+//         spaceBetween: 20
+//       },
+//       480: {
+//         spaceBetween: 20
+//       },
+//       768: {
+//         spaceBetween: 30
+//       },
+//       1440: {
+//         spaceBetween: 40
+//       }
+//     }
+//   });
+
+// });
+
 document.addEventListener("DOMContentLoaded", () => {
-  const swiper = new Swiper(".js_slider_webcm", {
-    slidesPerView: 'auto',
-    spaceBetween: 40,
-    centeredSlides: true,
-    loop: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      320: {
-        spaceBetween: 20
-      },
-      480: {
-        spaceBetween: 20
-      },
-      768: {
-        spaceBetween: 30
-      },
-      1440: {
-        spaceBetween: 40
-      }
-    }
+  $('.js_slider_webcm').slick({
+    centerMode: true,
+    slidesToShow: 1,
+    infinite: true,
+    dots: true,
+    arrows: false,
+    variableWidth: true,
+    appendDots: $('.js_slider_webcm_dots'),
+  });
+  $('.js_slider_webcm_prev').on('click', function () {
+    $('.js_slider_webcm').slick('slickPrev');
   });
 
+  $('.js_slider_webcm_next').on('click', function () {
+    $('.js_slider_webcm').slick('slickNext');
+  });
 });
 
 /*=============================
