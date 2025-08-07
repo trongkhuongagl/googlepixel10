@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const swiper = new Swiper(".js_slider_gg_pixel10", {
     slidesPerView: 'auto',
     spaceBetween: 40,
-    centeredSlides: true,
+    // centeredSlides: true,
     loop: true,
 
     navigation: {
@@ -70,13 +70,16 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     breakpoints: {
       320: {
-        spaceBetween: 20
+        spaceBetween: 20,
+        centeredSlides: true
       },
       480: {
-        spaceBetween: 20
+        spaceBetween: 20,
+        centeredSlides: true
       },
       768: {
-        spaceBetween: 30
+        spaceBetween: 30,
+        centeredSlides: true
       },
       1440: {
         spaceBetween: 30

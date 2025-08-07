@@ -6,7 +6,7 @@
   padding-top: vw-min(104);
   padding-bottom: vw-min(109);
   background-color: #F1F0FA;
-  scroll-margin-top: vw-min(72);
+  scroll-margin-top: vw-min(100);
   position: relative;
 
   @include mq('small') {
@@ -59,10 +59,12 @@
   .slider-gg-pixel-watch {
     width: vw-min(1440);
     margin: 0 auto vw-min(41);
+    padding-left: vw-min(120);
 
     @include mq('small') {
       width: vw-s(375);
       margin-bottom: vw-s(35);
+      padding-left: 0;
     }
   }
 
@@ -133,7 +135,7 @@
 
       @include mq('small') {
         width: vw-s(295);
-        border-radius: vw-s(7);
+        border-radius: vw-s(10);
         margin-bottom: vw-s(11);
       }
     }

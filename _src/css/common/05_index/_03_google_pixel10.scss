@@ -6,7 +6,7 @@
   padding-top: vw-min(106);
   padding-bottom: vw-min(108);
   background-color: #E5EDF8;
-  scroll-margin-top: vw-min(72);
+  scroll-margin-top: vw-min(100);
 
   @include mq('small') {
     padding-top: vw-s(44);
@@ -42,10 +42,12 @@
   .slider-gg-pixel10 {
     width: vw-min(1440);
     margin: 0 auto vw-min(105);
+    padding-left: vw-min(120);
 
     @include mq('small') {
       width: vw-s(375);
       margin-bottom: vw-s(37);
+      padding-left: 0;
     }
 
     .swiper-slide {
@@ -176,10 +178,12 @@
   .slider-gg-pixel10-02 {
     width: vw-min(1440);
     margin: 0 auto vw-min(41);
+    padding-left: vw-min(120);
 
     @include mq('small') {
       width: vw-s(375);
       margin-bottom: vw-s(30);
+      padding-left: 0;
     }
 
     .swiper-slide {
