@@ -18,38 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
 /*=============================
   Slider WEB CM
 ===============================*/
-// document.addEventListener("DOMContentLoaded", () => {
-//   const swiper = new Swiper(".js_slider_webcm", {
-//     slidesPerView: 'auto',
-//     spaceBetween: 40,
-//     centeredSlides: true,
-//     loop: true,
-//     navigation: {
-//       nextEl: ".swiper-button-next",
-//       prevEl: ".swiper-button-prev",
-//     },
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//     breakpoints: {
-//       320: {
-//         spaceBetween: 20
-//       },
-//       480: {
-//         spaceBetween: 20
-//       },
-//       768: {
-//         spaceBetween: 30
-//       },
-//       1440: {
-//         spaceBetween: 40
-//       }
-//     }
-//   });
-
-// });
-
 document.addEventListener("DOMContentLoaded", () => {
   $('.js_slider_webcm').slick({
     centerMode: true,
@@ -72,41 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
 /*=============================
   Slider Google Pixel 10
 ===============================*/
-// document.addEventListener("DOMContentLoaded", () => {
-//   const swiper = new Swiper(".js_slider_gg_pixel10", {
-//     slidesPerView: 'auto',
-//     spaceBetween: 40,
-//     // centeredSlides: true,
-//     loop: true,
-
-//     navigation: {
-//       nextEl: ".swiper-button-next",
-//       prevEl: ".swiper-button-prev",
-//     },
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//     breakpoints: {
-//       320: {
-//         spaceBetween: 20,
-//         centeredSlides: true
-//       },
-//       480: {
-//         spaceBetween: 20,
-//         centeredSlides: true
-//       },
-//       768: {
-//         spaceBetween: 30,
-//         centeredSlides: true
-//       },
-//       1440: {
-//         spaceBetween: 30
-//       }
-//     }
-//   });
-// });
-
 document.addEventListener("DOMContentLoaded", () => {
   $('.js_slider_gg_pixel10').slick({
     centerMode: false,
@@ -116,6 +49,14 @@ document.addEventListener("DOMContentLoaded", () => {
     arrows: false,
     variableWidth: true,
     appendDots: $('.js_slider_gg_pixel10_dots'),
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          centerMode: true
+        }
+      }
+    ]
   });
   $('.js_slider_gg_pixel10_prev').on('click', function () {
     $('.js_slider_gg_pixel10').slick('slickPrev');
@@ -130,37 +71,29 @@ document.addEventListener("DOMContentLoaded", () => {
   Slider Google Pixel 10 - 02
 ===============================*/
 document.addEventListener("DOMContentLoaded", () => {
-  const swiper = new Swiper(".js_slider_gg_pixel10_02", {
-    slidesPerView: 'auto',
-    spaceBetween: 40,
-    // centeredSlides: true,
-    loop: true,
-
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      320: {
-        spaceBetween: 20,
-        centeredSlides: true,
-      },
-      480: {
-        spaceBetween: 20,
-        centeredSlides: true,
-      },
-      768: {
-        spaceBetween: 30,
-        centeredSlides: true,
-      },
-      1440: {
-        spaceBetween: 30
+  $('.js_slider_gg_pixel10_02').slick({
+    centerMode: false,
+    slidesToShow: 1,
+    infinite: true,
+    dots: true,
+    arrows: false,
+    variableWidth: true,
+    appendDots: $('.js_slider_gg_pixel10_02_dots'),
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          centerMode: true
+        }
       }
-    }
+    ]
+  });
+  $('.js_slider_gg_pixel10_02_prev').on('click', function () {
+    $('.js_slider_gg_pixel10_02').slick('slickPrev');
+  });
+
+  $('.js_slider_gg_pixel10_02_next').on('click', function () {
+    $('.js_slider_gg_pixel10_02').slick('slickNext');
   });
 });
 
@@ -168,37 +101,29 @@ document.addEventListener("DOMContentLoaded", () => {
   Slider Google Pixel Watch
 ===============================*/
 document.addEventListener("DOMContentLoaded", () => {
-  const swiper = new Swiper(".js_slider_gg_pixel_watch", {
-    slidesPerView: 'auto',
-    spaceBetween: 40,
-    // centeredSlides: true,
-    loop: true,
-
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      320: {
-        spaceBetween: 20,
-        centeredSlides: true,
-      },
-      480: {
-        spaceBetween: 20,
-        centeredSlides: true,
-      },
-      768: {
-        spaceBetween: 30,
-        centeredSlides: true,
-      },
-      1440: {
-        spaceBetween: 30
+  $('.js_slider_gg_pixel_watch').slick({
+    centerMode: false,
+    slidesToShow: 1,
+    infinite: true,
+    dots: true,
+    arrows: false,
+    variableWidth: true,
+    appendDots: $('.js_slider_gg_pixel_watch_dots'),
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          centerMode: true
+        }
       }
-    }
+    ]
+  });
+  $('.js_slider_gg_pixel_watch_prev').on('click', function () {
+    $('.js_slider_gg_pixel_watch').slick('slickPrev');
+  });
+
+  $('.js_slider_gg_pixel_watch_next').on('click', function () {
+    $('.js_slider_gg_pixel_watch').slick('slickNext');
   });
 });
 

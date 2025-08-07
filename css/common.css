@@ -629,6 +629,12 @@ sub {
   margin: 0 auto min(7.2916666667vw, 105px);
   padding-left: min(8.3333333333vw, 120px);
 }
+.sec-google-pixel10 .slider-gg-pixel10 .js_slider_gg_pixel10 {
+  display: none;
+}
+.sec-google-pixel10 .slider-gg-pixel10 .js_slider_gg_pixel10.slick-initialized {
+  display: block;
+}
 .sec-google-pixel10 .slider-gg-pixel10 .slide {
   width: min(83.3333333333vw, 1200px);
   margin: 0 min(1.0416666667vw, 15px);
@@ -702,7 +708,13 @@ sub {
   margin: 0 auto min(2.8472222222vw, 41px);
   padding-left: min(8.3333333333vw, 120px);
 }
-.sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide {
+.sec-google-pixel10 .slider-gg-pixel10-02 .js_slider_gg_pixel10_02 {
+  display: none;
+}
+.sec-google-pixel10 .slider-gg-pixel10-02 .js_slider_gg_pixel10_02.slick-initialized {
+  display: block;
+}
+.sec-google-pixel10 .slider-gg-pixel10-02 .slide {
   width: min(34.7222222222vw, 500px);
   min-height: min(56.9444444444vw, 820px);
   background: #FFFFFF;
@@ -710,8 +722,9 @@ sub {
   padding: min(2.2222222222vw, 32px) min(3.4722222222vw, 50px) min(2.7777777778vw, 40px) min(3.4722222222vw, 50px);
   display: flex;
   flex-direction: column;
+  margin: 0 min(1.0416666667vw, 15px);
 }
-.sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide .head {
+.sec-google-pixel10 .slider-gg-pixel10-02 .slide .head {
   font-weight: 700;
   font-size: min(2.7777777778vw, 40px);
   line-height: 1.1;
@@ -719,41 +732,41 @@ sub {
   color: #202124;
   margin-bottom: min(0.4166666667vw, 6px);
 }
-.sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide .image-01 {
+.sec-google-pixel10 .slider-gg-pixel10-02 .slide .image-01 {
   width: min(27.7777777778vw, 400px);
   position: relative;
 }
-.sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide .popup {
+.sec-google-pixel10 .slider-gg-pixel10-02 .slide .popup {
   display: block;
   position: absolute;
   width: min(12.7777777778vw, 184px);
   top: min(1.1805555556vw, 17px);
   right: min(-2.7777777778vw, -40px);
 }
-.sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide .popup img {
+.sec-google-pixel10 .slider-gg-pixel10-02 .slide .popup img {
   width: 100%;
   height: 100%;
   object-fit: 100%;
 }
-.sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide .image-02 {
+.sec-google-pixel10 .slider-gg-pixel10-02 .slide .image-02 {
   width: min(27.7777777778vw, 400px);
   border-radius: min(1.3888888889vw, 20px);
   overflow: hidden;
   margin-bottom: min(1.1111111111vw, 16px);
 }
-.sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide .desc {
+.sec-google-pixel10 .slider-gg-pixel10-02 .slide .desc {
   font-size: min(1.1111111111vw, 16px);
   font-weight: 400;
   line-height: 1.5;
   color: #202124;
 }
-.sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide .num {
+.sec-google-pixel10 .slider-gg-pixel10-02 .slide .num {
   font-size: min(0.7638888889vw, 11px);
   line-height: 1;
   position: relative;
   top: min(-0.2777777778vw, -4px);
 }
-.sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide .button {
+.sec-google-pixel10 .slider-gg-pixel10-02 .slide .button {
   width: min(15.9722222222vw, 230px);
   margin-top: auto;
 }
@@ -797,7 +810,13 @@ sub {
   margin: 0 auto min(2.8472222222vw, 41px);
   padding-left: min(8.3333333333vw, 120px);
 }
-.sec-google-pixel-watch .swiper-slide {
+.sec-google-pixel-watch .js_slider_gg_pixel_watch {
+  display: none;
+}
+.sec-google-pixel-watch .js_slider_gg_pixel_watch.slick-initialized {
+  display: block;
+}
+.sec-google-pixel-watch .slide {
   width: min(34.7222222222vw, 500px);
   min-height: min(56.9444444444vw, 820px);
   padding: min(2.2222222222vw, 32px) min(3.4722222222vw, 50px) min(2.7777777778vw, 40px) min(3.4722222222vw, 50px);
@@ -805,8 +824,9 @@ sub {
   background: #FFFFFF;
   display: flex;
   flex-direction: column;
+  margin: 0 min(1.0416666667vw, 15px);
 }
-.sec-google-pixel-watch .swiper-slide .head {
+.sec-google-pixel-watch .slide .head {
   font-weight: 700;
   font-size: min(2.7777777778vw, 40px);
   line-height: 1.3;
@@ -816,41 +836,41 @@ sub {
   margin-right: min(-3.125vw, -45px);
   margin-bottom: min(0.6944444444vw, 10px);
 }
-.sec-google-pixel-watch .swiper-slide .image-01 {
+.sec-google-pixel-watch .slide .image-01 {
   width: min(27.7777777778vw, 400px);
   margin: 0 auto;
   position: relative;
 }
-.sec-google-pixel-watch .swiper-slide .popup {
+.sec-google-pixel-watch .slide .popup {
   width: min(12.7777777778vw, 184px);
   position: absolute;
   top: min(0.625vw, 9px);
   right: min(-2.7777777778vw, -40px);
 }
-.sec-google-pixel-watch .swiper-slide .popup img {
+.sec-google-pixel-watch .slide .popup img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-.sec-google-pixel-watch .swiper-slide .image-02 {
+.sec-google-pixel-watch .slide .image-02 {
   width: min(27.7777777778vw, 400px);
   border-radius: min(1.3888888889vw, 20px);
   overflow: hidden;
   margin: 0 auto min(1.1111111111vw, 16px);
 }
-.sec-google-pixel-watch .swiper-slide .desc {
+.sec-google-pixel-watch .slide .desc {
   font-size: min(1.1111111111vw, 16px);
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: -0.02em;
 }
-.sec-google-pixel-watch .swiper-slide .num {
+.sec-google-pixel-watch .slide .num {
   font-size: min(0.7638888889vw, 11px);
   line-height: 1;
   position: relative;
   top: min(-0.2083333333vw, -3px);
 }
-.sec-google-pixel-watch .swiper-slide .button {
+.sec-google-pixel-watch .slide .button {
   width: min(15.9722222222vw, 230px);
   margin-top: auto;
 }
@@ -1413,37 +1433,38 @@ sub {
     margin-bottom: 8vw;
     padding-left: 0;
   }
-  .sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide {
+  .sec-google-pixel10 .slider-gg-pixel10-02 .slide {
     width: 89.3333333333vw;
     min-height: 173.0666666667vw;
     padding: 5.3333333333vw 5.3333333333vw 8vw 5.3333333333vw;
     border-radius: 2.6666666667vw;
+    margin: 0 2.6666666667vw;
   }
-  .sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide .head {
+  .sec-google-pixel10 .slider-gg-pixel10-02 .slide .head {
     font-size: 8vw;
     margin-bottom: 0.2666666667vw;
   }
-  .sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide .image-01 {
+  .sec-google-pixel10 .slider-gg-pixel10-02 .slide .image-01 {
     width: 78.6666666667vw;
   }
-  .sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide .popup {
+  .sec-google-pixel10 .slider-gg-pixel10-02 .slide .popup {
     width: 33.0666666667vw;
     top: 6.9333333333vw;
     right: -3.7333333333vw;
   }
-  .sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide .image-02 {
+  .sec-google-pixel10 .slider-gg-pixel10-02 .slide .image-02 {
     width: 78.6666666667vw;
     border-radius: 1.8666666667vw;
     margin-bottom: 2.9333333333vw;
   }
-  .sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide .desc {
+  .sec-google-pixel10 .slider-gg-pixel10-02 .slide .desc {
     font-size: 3.7333333333vw;
   }
-  .sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide .num {
+  .sec-google-pixel10 .slider-gg-pixel10-02 .slide .num {
     font-size: 2.9333333333vw;
     top: -1.0666666667vw;
   }
-  .sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide .button {
+  .sec-google-pixel10 .slider-gg-pixel10-02 .slide .button {
     width: 61.3333333333vw;
   }
   .sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide-01 .head {
@@ -1482,39 +1503,40 @@ sub {
     margin-bottom: 9.3333333333vw;
     padding-left: 0;
   }
-  .sec-google-pixel-watch .swiper-slide {
+  .sec-google-pixel-watch .slide {
     width: 89.3333333333vw;
     min-height: 173.0666666667vw;
     padding: 5.3333333333vw 5.3333333333vw 7.4666666667vw 5.3333333333vw;
     border-radius: 2.6666666667vw;
+    margin: 0 2.6666666667vw;
   }
-  .sec-google-pixel-watch .swiper-slide .head {
+  .sec-google-pixel-watch .slide .head {
     font-size: 7.4666666667vw;
     margin-left: -4vw;
     margin-right: -4vw;
     margin-bottom: 2.6666666667vw;
   }
-  .sec-google-pixel-watch .swiper-slide .image-01 {
+  .sec-google-pixel-watch .slide .image-01 {
     width: 78.6666666667vw;
   }
-  .sec-google-pixel-watch .swiper-slide .popup {
+  .sec-google-pixel-watch .slide .popup {
     width: 33.0666666667vw;
     top: 7.2vw;
     right: -3.4666666667vw;
   }
-  .sec-google-pixel-watch .swiper-slide .image-02 {
+  .sec-google-pixel-watch .slide .image-02 {
     width: 78.6666666667vw;
     border-radius: 2.6666666667vw;
     margin-bottom: 2.9333333333vw;
   }
-  .sec-google-pixel-watch .swiper-slide .desc {
+  .sec-google-pixel-watch .slide .desc {
     font-size: 3.7333333333vw;
   }
-  .sec-google-pixel-watch .swiper-slide .num {
+  .sec-google-pixel-watch .slide .num {
     font-size: 2.9333333333vw;
     top: -0.8vw;
   }
-  .sec-google-pixel-watch .swiper-slide .button {
+  .sec-google-pixel-watch .slide .button {
     width: 61.3333333333vw;
   }
   .sec-google-pixel-watch .notes-03 {
