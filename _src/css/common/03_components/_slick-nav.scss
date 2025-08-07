@@ -17,8 +17,8 @@
     padding-bottom: vw-s(5);
   }
 
-  .js_slider_webcm_next,
-  .js_slider_webcm_prev {
+  .slider_next,
+  .slider_prev {
     margin-top: 0;
     width: vw-min(60);
     height: vw-min(60);
@@ -41,13 +41,13 @@
       height: vw-s(60);
     }
   }
-  .js_slider_webcm_next {
+  .slider_next {
     background-image: url('/special_contents/smartphone/pixel10/images/ico_arrow_right.svg');
   }
-  .js_slider_webcm_prev {
+  .slider_prev {
     background-image: url('/special_contents/smartphone/pixel10/images/ico_arrow_left.svg');
   }
-  .js_slider_webcm_dots {
+  .slider_dots {
     .slick-dots {
       display: flex;
       justify-content: center;

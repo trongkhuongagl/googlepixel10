@@ -371,8 +371,8 @@ sub {
   margin: min(2.0833333333vw, 30px) auto 0;
   padding-bottom: min(0.3472222222vw, 5px);
 }
-.c-slick-nav .js_slider_webcm_next,
-.c-slick-nav .js_slider_webcm_prev {
+.c-slick-nav .slider_next,
+.c-slick-nav .slider_prev {
   margin-top: 0;
   width: min(4.1666666667vw, 60px);
   height: min(4.1666666667vw, 60px);
@@ -386,30 +386,30 @@ sub {
   -ms-user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
-.c-slick-nav .js_slider_webcm_next:hover,
-.c-slick-nav .js_slider_webcm_prev:hover {
+.c-slick-nav .slider_next:hover,
+.c-slick-nav .slider_prev:hover {
   transform: scale(1.1);
 }
-.c-slick-nav .js_slider_webcm_next {
+.c-slick-nav .slider_next {
   background-image: url("/special_contents/smartphone/pixel10/images/ico_arrow_right.svg");
 }
-.c-slick-nav .js_slider_webcm_prev {
+.c-slick-nav .slider_prev {
   background-image: url("/special_contents/smartphone/pixel10/images/ico_arrow_left.svg");
 }
-.c-slick-nav .js_slider_webcm_dots .slick-dots {
+.c-slick-nav .slider_dots .slick-dots {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: min(1.3888888889vw, 20px);
 }
-.c-slick-nav .js_slider_webcm_dots .slick-dots li {
+.c-slick-nav .slider_dots .slick-dots li {
   width: min(0.9027777778vw, 13px);
   height: min(0.9027777778vw, 13px);
   border-radius: 50%;
   background-color: rgba(204, 0, 51, 0.3);
   text-indent: -9999px;
 }
-.c-slick-nav .js_slider_webcm_dots .slick-dots li.slick-active {
+.c-slick-nav .slider_dots .slick-dots li.slick-active {
   background-color: #CC0033;
 }
 
@@ -629,10 +629,11 @@ sub {
   margin: 0 auto min(7.2916666667vw, 105px);
   padding-left: min(8.3333333333vw, 120px);
 }
-.sec-google-pixel10 .slider-gg-pixel10 .swiper-slide {
+.sec-google-pixel10 .slider-gg-pixel10 .slide {
   width: min(83.3333333333vw, 1200px);
+  margin: 0 min(1.0416666667vw, 15px);
 }
-.sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .content {
+.sec-google-pixel10 .slider-gg-pixel10 .slide .content {
   width: 100%;
   height: min(31.9444444444vw, 460px);
   display: flex;
@@ -644,20 +645,20 @@ sub {
   box-sizing: border-box;
   position: relative;
 }
-.sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .notes-01 {
+.sec-google-pixel10 .slider-gg-pixel10 .slide .notes-01 {
   margin-top: min(1.0416666667vw, 15px);
 }
-.sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .info {
+.sec-google-pixel10 .slider-gg-pixel10 .slide .info {
   width: min(40.2777777778vw, 580px);
 }
-.sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .head-en {
+.sec-google-pixel10 .slider-gg-pixel10 .slide .head-en {
   font-size: min(3.4722222222vw, 50px);
   color: #202124;
   line-height: 1.1;
   text-align: center;
   margin-bottom: min(1.1111111111vw, 16px);
 }
-.sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .desc {
+.sec-google-pixel10 .slider-gg-pixel10 .slide .desc {
   font-size: min(1.1111111111vw, 16px);
   font-weight: 500;
   text-align: center;
@@ -665,13 +666,13 @@ sub {
   line-height: 1.5;
   margin-bottom: min(0.4166666667vw, 6px);
 }
-.sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .num {
+.sec-google-pixel10 .slider-gg-pixel10 .slide .num {
   font-size: min(0.6944444444vw, 10px);
   line-height: 1;
   position: relative;
   top: min(-0.2083333333vw, -3px);
 }
-.sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .lead {
+.sec-google-pixel10 .slider-gg-pixel10 .slide .lead {
   font-size: min(2.2222222222vw, 32px);
   color: #CC0033;
   text-align: center;
@@ -680,10 +681,10 @@ sub {
   line-height: 1.5;
   margin-bottom: min(1.4583333333vw, 21px);
 }
-.sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .button {
+.sec-google-pixel10 .slider-gg-pixel10 .slide .button {
   width: min(20.8333333333vw, 300px);
 }
-.sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .image {
+.sec-google-pixel10 .slider-gg-pixel10 .slide .image {
   width: min(83.3333333333vw, 1200px);
   height: min(31.9444444444vw, 460px);
   border-radius: min(0.6944444444vw, 10px);
@@ -1226,15 +1227,15 @@ sub {
     margin-top: 5.3333333333vw;
     padding-bottom: 1.3333333333vw;
   }
-  .c-slick-nav .js_slider_webcm_next,
-  .c-slick-nav .js_slider_webcm_prev {
+  .c-slick-nav .slider_next,
+  .c-slick-nav .slider_prev {
     width: 16vw;
     height: 16vw;
   }
-  .c-slick-nav .js_slider_webcm_dots .slick-dots {
+  .c-slick-nav .slider_dots .slick-dots {
     gap: 5.3333333333vw;
   }
-  .c-slick-nav .js_slider_webcm_dots .slick-dots li {
+  .c-slick-nav .slider_dots .slick-dots li {
     width: 3.4666666667vw;
     height: 3.4666666667vw;
   }
@@ -1363,42 +1364,43 @@ sub {
     margin-bottom: 9.8666666667vw;
     padding-left: 0;
   }
-  .sec-google-pixel10 .slider-gg-pixel10 .swiper-slide {
+  .sec-google-pixel10 .slider-gg-pixel10 .slide {
     width: 89.3333333333vw;
+    margin: 0 2.6666666667vw;
   }
-  .sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .content {
+  .sec-google-pixel10 .slider-gg-pixel10 .slide .content {
     height: 133.3333333333vw;
     flex-direction: column;
     border-radius: 2.6666666667vw;
     padding: 8vw 2.6666666667vw;
   }
-  .sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .notes-01 {
+  .sec-google-pixel10 .slider-gg-pixel10 .slide .notes-01 {
     margin-top: 3.2vw;
   }
-  .sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .info {
+  .sec-google-pixel10 .slider-gg-pixel10 .slide .info {
     width: 100%;
   }
-  .sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .head-en {
+  .sec-google-pixel10 .slider-gg-pixel10 .slide .head-en {
     font-size: 11.2vw;
     margin-bottom: 1.0666666667vw;
     line-height: 1.2;
   }
-  .sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .desc {
+  .sec-google-pixel10 .slider-gg-pixel10 .slide .desc {
     font-size: 3.7333333333vw;
     margin-bottom: 1.3333333333vw;
   }
-  .sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .num {
+  .sec-google-pixel10 .slider-gg-pixel10 .slide .num {
     font-size: 2.6666666667vw;
     top: -0.8vw;
   }
-  .sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .lead {
+  .sec-google-pixel10 .slider-gg-pixel10 .slide .lead {
     font-size: 5.8666666667vw;
     margin-bottom: 1.6vw;
   }
-  .sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .button {
+  .sec-google-pixel10 .slider-gg-pixel10 .slide .button {
     width: 80vw;
   }
-  .sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .image {
+  .sec-google-pixel10 .slider-gg-pixel10 .slide .image {
     width: 89.3333333333vw;
     height: 133.3333333333vw;
     border-radius: 2.6666666667vw;

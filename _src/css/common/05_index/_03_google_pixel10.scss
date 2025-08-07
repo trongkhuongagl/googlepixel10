@@ -50,11 +50,13 @@
       padding-left: 0;
     }
 
-    .swiper-slide {
+    .slide {
       width: vw-min(1200);
+      margin: 0 vw-min(15);
 
       @include mq('small') {
         width: vw-s(335);
+        margin: 0 vw-s(10);
       }
 
       .content {

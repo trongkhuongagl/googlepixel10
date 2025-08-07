@@ -72,38 +72,57 @@ document.addEventListener("DOMContentLoaded", () => {
 /*=============================
   Slider Google Pixel 10
 ===============================*/
-document.addEventListener("DOMContentLoaded", () => {
-  const swiper = new Swiper(".js_slider_gg_pixel10", {
-    slidesPerView: 'auto',
-    spaceBetween: 40,
-    // centeredSlides: true,
-    loop: true,
+// document.addEventListener("DOMContentLoaded", () => {
+//   const swiper = new Swiper(".js_slider_gg_pixel10", {
+//     slidesPerView: 'auto',
+//     spaceBetween: 40,
+//     // centeredSlides: true,
+//     loop: true,
 
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      320: {
-        spaceBetween: 20,
-        centeredSlides: true
-      },
-      480: {
-        spaceBetween: 20,
-        centeredSlides: true
-      },
-      768: {
-        spaceBetween: 30,
-        centeredSlides: true
-      },
-      1440: {
-        spaceBetween: 30
-      }
-    }
+//     navigation: {
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev",
+//     },
+//     pagination: {
+//       el: ".swiper-pagination",
+//       clickable: true,
+//     },
+//     breakpoints: {
+//       320: {
+//         spaceBetween: 20,
+//         centeredSlides: true
+//       },
+//       480: {
+//         spaceBetween: 20,
+//         centeredSlides: true
+//       },
+//       768: {
+//         spaceBetween: 30,
+//         centeredSlides: true
+//       },
+//       1440: {
+//         spaceBetween: 30
+//       }
+//     }
+//   });
+// });
+
+document.addEventListener("DOMContentLoaded", () => {
+  $('.js_slider_gg_pixel10').slick({
+    centerMode: true,
+    slidesToShow: 1,
+    infinite: true,
+    dots: true,
+    arrows: false,
+    variableWidth: true,
+    appendDots: $('.js_slider_gg_pixel10_dots'),
+  });
+  $('.js_slider_gg_pixel10_prev').on('click', function () {
+    $('.js_slider_gg_pixel10').slick('slickPrev');
+  });
+
+  $('.js_slider_gg_pixel10_next').on('click', function () {
+    $('.js_slider_gg_pixel10').slick('slickNext');
   });
 });
 
