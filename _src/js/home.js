@@ -48,36 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Popup Video
-  const popup = document.getElementById('popup_video');
-  const iframe = document.getElementById('youtube_frame');
-  const closeBtn = document.querySelector('.popup-close');
-  const overlay = document.querySelector('.popup-overlay');
-
-  // Open popup when click slide item
-  document.querySelectorAll('.js_slider_webcm .swiper-slide').forEach(slide => {
-    slide.addEventListener('click', () => {
-      const videoId = slide.getAttribute('data-video-id');
-      iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&rel=0`;
-      popup.classList.add('active');
-    });
-  });
-
-  // Function close popup & reset video
-  function closePopup() {
-    popup.classList.remove('active');
-    iframe.src = '';
-  }
-
-  // Close popup
-  closeBtn.addEventListener('click', closePopup);
-  overlay.addEventListener('click', closePopup);
-
-  // Prevent clicking on videos from closing popups (block bubbling)
-  document.querySelector('.popup-content').addEventListener('click', e => {
-    e.stopPropagation();
-  });
-
 });
 
 /*=============================
