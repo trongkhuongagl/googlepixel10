@@ -10,7 +10,7 @@
 
   @include mq('small') {
     padding-top: vw-s(44);
-    padding-bottom: vw-s(68);
+    padding-bottom: vw-s(75);
   }
 
   .title {
@@ -45,7 +45,7 @@
 
     @include mq('small') {
       width: vw-s(375);
-      margin-bottom: vw-s(40);
+      margin-bottom: vw-s(37);
     }
 
     .swiper-slide {
@@ -116,9 +116,13 @@
       }
       .num {
         font-size: vw-min(10);
+        line-height: 1;
+        position: relative;
+        top: vw-min(-3);
 
         @include mq('small') {
           font-size: vw-s(10);
+          top: vw-s(-3);
         }
       }
       .lead {
@@ -132,7 +136,7 @@
 
         @include mq('small') {
           font-size: vw-s(22);
-          margin-bottom: vw-s(10);
+          margin-bottom: vw-s(6);
         }
       }
       .button {
@@ -175,7 +179,7 @@
 
     @include mq('small') {
       width: vw-s(375);
-      margin-bottom: vw-s(37);
+      margin-bottom: vw-s(30);
     }
 
     .swiper-slide {
@@ -296,7 +300,16 @@
     margin-bottom: vw-min(53);
 
     @include mq('small') {
-      margin-bottom: vw-s(25);
+      margin-bottom: vw-s(32);
+    }
+  }
+
+  .button-01 {
+    @include mq('small') {
+      .c-button02-title {
+        margin-left: vw-s(-15);
+        margin-right: vw-s(-15);
+      }
     }
   }
 }

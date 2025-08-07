@@ -470,7 +470,7 @@ sub {
   background-image: url("data:image/svg+xml,%3Csvg width='21' height='16' viewBox='0 0 21 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='4.70813' y='1' width='14.875' height='9.95312' stroke='white' stroke-width='2'/%3E%3Cpath d='M1 3.04688V15H17.875' stroke='white' stroke-width='2'/%3E%3C/svg%3E%0A");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   margin-left: min(0.6944444444vw, 10px);
   position: relative;
   top: min(0.0694444444vw, 1px);
@@ -613,6 +613,9 @@ sub {
 }
 .sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .num {
   font-size: min(0.6944444444vw, 10px);
+  line-height: 1;
+  position: relative;
+  top: min(-0.2083333333vw, -3px);
 }
 .sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .lead {
   font-size: min(2.2222222222vw, 32px);
@@ -770,7 +773,7 @@ sub {
 .sec-google-pixel-watch .swiper-slide .popup img {
   width: 100%;
   height: 100%;
-  object-fit: 100%;
+  object-fit: contain;
 }
 .sec-google-pixel-watch .swiper-slide .image-02 {
   width: min(27.7777777778vw, 400px);
@@ -1115,7 +1118,7 @@ sub {
     margin-bottom: 5.8666666667vw;
   }
   .c-button02-link {
-    height: 32vw;
+    height: 30.1333333333vw;
     gap: 4vw;
     border-radius: 26.6666666667vw;
     font-size: 6.4vw;
@@ -1132,13 +1135,13 @@ sub {
   .c-button02-bubble {
     width: 22.6666666667vw;
     height: 22.6666666667vw;
-    padding-top: 5.3333333333vw;
+    padding-top: 5.8666666667vw;
     padding-left: 1.8666666667vw;
     font-size: 4.2666666667vw;
     line-height: 4.8vw;
     letter-spacing: -0.05em;
-    top: -11.4666666667vw;
-    right: 0vw;
+    top: -9.8666666667vw;
+    right: -2.6666666667vw;
   }
   .c-button02-shadow {
     border-radius: 26.6666666667vw;
@@ -1161,15 +1164,21 @@ sub {
     width: 3.4666666667vw;
     height: 3.4666666667vw;
   }
+  .c-note01 {
+    width: 89.3333333333vw;
+  }
   .c-note01 .row {
     gap: 2.1333333333vw;
   }
   .c-note01 .row:not(:first-of-type) {
-    margin-top: 2.4vw;
+    margin-top: 1.6vw;
   }
   .c-note01 .number,
   .c-note01 .text {
     font-size: 2.6666666667vw;
+  }
+  .c-note01 .link {
+    word-break: break-all;
   }
   .pc {
     display: none;
@@ -1203,34 +1212,35 @@ sub {
   }
   .footer {
     text-align: left;
-    padding: 8vw 8vw 34.6666666667vw 8vw;
+    padding: 9.0666666667vw 8vw 34.6666666667vw 8.8vw;
   }
   .footer_nav {
-    gap: 5.3333333333vw;
+    gap: 4.8vw;
     flex-direction: column;
     line-height: 1.5;
   }
   .footer_nav_a .e-ico {
     top: 0.2666666667vw;
-    width: 5.6vw;
-    height: 4.2666666667vw;
-    margin-left: 1.3333333333vw;
+    width: 4.8vw;
+    height: 3.2vw;
+    margin-left: 1.0666666667vw;
   }
   .footer_nav_a:not(:first-of-type) {
     border: none;
     padding: 0;
   }
   .footer_nav_a {
-    font-size: 4.0712468193vw;
+    font-size: 3.3078880407vw;
     line-height: 1.625;
+    letter-spacing: 0.4266666667vw;
   }
   .footer_nav_a:last-of-type .e-ico {
     top: 0.5333333333vw;
     left: 2.1333333333vw;
   }
   .footer_coryright {
-    font-size: 3.5623409669vw;
-    margin-top: 5.3333333333vw;
+    font-size: 3.0534351145vw;
+    margin-top: 6.1333333333vw;
     white-space: nowrap;
   }
   .sec_content {
@@ -1265,7 +1275,7 @@ sub {
   }
   .sec-google-pixel10 {
     padding-top: 11.7333333333vw;
-    padding-bottom: 18.1333333333vw;
+    padding-bottom: 20vw;
   }
   .sec-google-pixel10 .title .en {
     font-size: 15.4666666667vw;
@@ -1279,7 +1289,7 @@ sub {
   }
   .sec-google-pixel10 .slider-gg-pixel10 {
     width: 100vw;
-    margin-bottom: 10.6666666667vw;
+    margin-bottom: 9.8666666667vw;
   }
   .sec-google-pixel10 .slider-gg-pixel10 .swiper-slide {
     width: 89.3333333333vw;
@@ -1307,10 +1317,11 @@ sub {
   }
   .sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .num {
     font-size: 2.6666666667vw;
+    top: -0.8vw;
   }
   .sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .lead {
     font-size: 5.8666666667vw;
-    margin-bottom: 2.6666666667vw;
+    margin-bottom: 1.6vw;
   }
   .sec-google-pixel10 .slider-gg-pixel10 .swiper-slide .button {
     width: 80vw;
@@ -1325,7 +1336,7 @@ sub {
   }
   .sec-google-pixel10 .slider-gg-pixel10-02 {
     width: 100vw;
-    margin-bottom: 9.8666666667vw;
+    margin-bottom: 8vw;
   }
   .sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide {
     width: 89.3333333333vw;
@@ -1365,11 +1376,15 @@ sub {
     margin-bottom: 1.3333333333vw;
   }
   .sec-google-pixel10 .notes-02 {
-    margin-bottom: 6.6666666667vw;
+    margin-bottom: 8.5333333333vw;
+  }
+  .sec-google-pixel10 .button-01 .c-button02-title {
+    margin-left: -4vw;
+    margin-right: -4vw;
   }
   .sec-google-pixel-watch {
-    padding-top: 14.6666666667vw;
-    padding-bottom: 18.1333333333vw;
+    padding-top: 12.8vw;
+    padding-bottom: 19.7333333333vw;
   }
   .sec-google-pixel-watch .title .en {
     font-size: 16vw;
@@ -1378,18 +1393,18 @@ sub {
   .sec-google-pixel-watch .title {
     width: 98.6666666667vw;
     font-size: 11.2vw;
-    line-height: 1.3;
+    line-height: 1.21;
     text-align: center;
-    margin-bottom: 2.6666666667vw;
+    margin-bottom: 3.4666666667vw;
   }
   .sec-google-pixel-watch .bg-watch {
     position: static;
-    width: 82.6666666667vw;
-    margin: 0 auto -26.6666666667vw;
+    width: 81.0666666667vw;
+    margin: 0 auto -22.9333333333vw;
   }
   .sec-google-pixel-watch .slider-gg-pixel-watch {
     width: 100vw;
-    margin-bottom: 10.4vw;
+    margin-bottom: 9.3333333333vw;
   }
   .sec-google-pixel-watch .swiper-slide {
     width: 89.3333333333vw;
@@ -1401,15 +1416,15 @@ sub {
     font-size: 7.4666666667vw;
     margin-left: -4vw;
     margin-right: -4vw;
-    margin-bottom: 1.3333333333vw;
+    margin-bottom: 2.6666666667vw;
   }
   .sec-google-pixel-watch .swiper-slide .image-01 {
     width: 78.6666666667vw;
   }
   .sec-google-pixel-watch .swiper-slide .popup {
-    width: 35.7333333333vw;
-    top: 3.2vw;
-    right: -2.6666666667vw;
+    width: 33.0666666667vw;
+    top: 7.2vw;
+    right: -3.4666666667vw;
   }
   .sec-google-pixel-watch .swiper-slide .image-02 {
     width: 78.6666666667vw;
@@ -1427,10 +1442,14 @@ sub {
     width: 61.3333333333vw;
   }
   .sec-google-pixel-watch .notes-03 {
-    margin-bottom: 8vw;
+    margin-bottom: 10.4vw;
+  }
+  .sec-google-pixel-watch .notes-03 .row:not(:first-of-type) {
+    margin-top: 2.6666666667vw;
   }
   .sec-google-pixel-watch .banner {
     width: 89.3333333333vw;
+    margin-bottom: 6.6666666667vw;
   }
   .sec-plan {
     padding-top: 16vw;
@@ -1440,8 +1459,8 @@ sub {
     width: 89.3333333333vw;
     border-width: 1.6vw;
     border-radius: 2.6666666667vw;
-    padding-top: 10.6666666667vw;
-    padding-bottom: 10.6666666667vw;
+    padding-top: 9.3333333333vw;
+    padding-bottom: 9.6vw;
   }
   .sec-plan .title {
     width: 81.0666666667vw;
@@ -1449,12 +1468,12 @@ sub {
   }
   .sec-plan .title-sub {
     font-size: 6.9333333333vw;
-    margin-bottom: 3.4666666667vw;
+    margin-bottom: 6.1333333333vw;
   }
   .sec-plan .list {
     grid-template-columns: repeat(1, 1fr);
     padding: 0 3.7333333333vw;
-    margin-bottom: 10.6666666667vw;
+    margin-bottom: 11.4666666667vw;
   }
   .sec-plan .list .item:not(:first-child) {
     border-left: none;
@@ -1465,26 +1484,27 @@ sub {
   }
   .sec-campaign-inner {
     width: 100%;
-    padding: 16vw 5.3333333333vw;
+    padding: 17.3333333333vw 5.3333333333vw 16vw;
   }
   .sec-campaign .box-item-01 {
     flex-direction: column;
     border-radius: 2.6666666667vw;
-    padding: 4.5333333333vw;
+    padding: 4.5333333333vw 4.5333333333vw 8.5333333333vw 4.5333333333vw;
   }
   .sec-campaign .box-item-01 .image {
-    width: 100%;
+    width: 96.8vw;
     margin-bottom: 4.2666666667vw;
+    margin-left: -8.2666666667vw;
   }
   .sec-campaign .box-item-01 .title {
     font-size: 7.4666666667vw;
-    margin-bottom: 4.8vw;
+    margin-bottom: 5.0666666667vw;
   }
   .sec-campaign .box-item-01 .list {
     flex-direction: column;
     align-items: flex-start;
     gap: 4vw;
-    padding-left: 6.6666666667vw;
+    padding-left: 5.3333333333vw;
     margin-bottom: 6.9333333333vw;
   }
   .sec-campaign .box-item-01 .list .item {
@@ -1502,7 +1522,7 @@ sub {
   }
   .sec-campaign .box-item-02 {
     flex-direction: column;
-    gap: 8vw;
+    gap: 7.2vw;
     border-radius: 2.6666666667vw;
     padding: 10.6666666667vw 5.3333333333vw 8vw;
     margin-top: 5.3333333333vw;
@@ -1517,7 +1537,7 @@ sub {
     margin-bottom: 3.7333333333vw;
   }
   .sec-campaign .box-item-02 .sub-box .list {
-    gap: 7.4666666667vw;
+    gap: 0.8vw;
     margin-bottom: 1.6vw;
     padding: 0;
   }
@@ -1525,6 +1545,7 @@ sub {
     flex-direction: column;
     font-size: 5.3333333333vw;
     gap: 3.4666666667vw;
+    flex: 1;
   }
   .sec-campaign .box-item-02 .sub-box .list .item::before {
     width: 16vw;
@@ -1532,10 +1553,13 @@ sub {
   }
   .sec-campaign .box-item-02 .sub-box .list .item:nth-child(1) {
     gap: 3.4666666667vw;
+    position: relative;
+    left: 2.4vw;
   }
   .sec-campaign .box-item-02 .sub-box .title {
     font-size: 8vw;
     letter-spacing: -0.05em;
+    margin-bottom: 2.6666666667vw;
   }
   .sec-campaign .box-item-02 .sub-box .desc {
     font-size: 2.6666666667vw;

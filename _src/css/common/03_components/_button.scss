@@ -106,7 +106,7 @@
     z-index: 1;
 
     @include mq('small') {
-      height: vw-s(120);
+      height: vw-s(113);
       gap: vw-s(15);
       border-radius: vw-s(100);
       font-size: vw-s(24);
@@ -178,13 +178,13 @@
     @include mq('small') {
       width: vw-s(85);
       height: vw-s(85);
-      padding-top: vw-s(20);
+      padding-top: vw-s(22);
       padding-left: vw-s(7);
       font-size: vw-s(16);
       line-height: vw-s(18);
       letter-spacing: -0.05em;
-      top: vw-s(-43);
-      right: vw-s(0);
+      top: vw-s(-37);
+      right: vw-s(-10);
     }
   }
   &-shadow {

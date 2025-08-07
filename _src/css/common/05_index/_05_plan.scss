@@ -25,8 +25,8 @@
       width: vw-s(335);
       border-width: vw-s(6);
       border-radius: vw-s(10);
-      padding-top: vw-s(40);
-      padding-bottom: vw-s(40);
+      padding-top: vw-s(35);
+      padding-bottom: vw-s(36);
     }
   }
   .title {
@@ -48,7 +48,7 @@
 
       @include mq('small') {
         font-size: vw-s(26);
-        margin-bottom: vw-s(13);
+        margin-bottom: vw-s(23);
       }
       .red {
         color: #CC0033;
@@ -63,7 +63,7 @@
     @include mq('small') {
       grid-template-columns: repeat(1, 1fr);
       padding: 0 vw-s(14);
-      margin-bottom: vw-s(40);
+      margin-bottom: vw-s(43);
     }
     .item {
       &:not(:first-child) {

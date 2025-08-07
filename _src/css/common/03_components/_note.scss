@@ -5,6 +5,10 @@
 .c-note01 {
   width: vw-min(1200);
   margin: 0 auto;
+
+  @include mq('small') {
+    width: vw-s(335);
+  }
   .row {
     display: flex;
     gap: vw-min(10);
@@ -14,7 +18,7 @@
     @include mq('small') {
       gap: vw-s(8);
       &:not(:first-of-type) {
-        margin-top: vw-s(9);
+        margin-top: vw-s(6);
       }
     }
   }
@@ -32,6 +36,11 @@
   .link {
     color: #CC0033;
     text-decoration: underline;
+
+    @include mq('small') {
+      word-break: break-all;
+    }
+
     &:hover {
       text-decoration: none;
     }

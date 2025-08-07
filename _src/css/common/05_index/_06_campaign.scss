@@ -13,7 +13,7 @@
 
     @include mq('small') {
       width: 100%;
-      padding: vw-s(60) vw-s(20);
+      padding: vw-s(65) vw-s(20) vw-s(60);
     }
   }
 
@@ -29,15 +29,16 @@
     @include mq('small') {
       flex-direction: column;
       border-radius: vw-s(10);
-      padding: vw-s(17);
+      padding: vw-s(17) vw-s(17) vw-s(32) vw-s(17);
     }
 
     .image {
       width: vw-min(447);
 
       @include mq('small') {
-        width: 100%;
+        width: vw-s(363);
         margin-bottom: vw-s(16);
+        margin-left: vw-s(-31);
       }
     }
 
@@ -54,7 +55,7 @@
 
       @include mq('small') {
         font-size: vw-s(28);
-        margin-bottom: vw-s(18);
+        margin-bottom: vw-s(19);
       }
     }
 
@@ -69,7 +70,7 @@
         flex-direction: column;
         align-items: flex-start;
         gap: vw-s(15);
-        padding-left: vw-s(25);
+        padding-left: vw-s(20);
         margin-bottom: vw-s(26);
       }
 
@@ -126,7 +127,7 @@
 
     @include mq('small') {
       flex-direction: column;
-      gap: vw-s(30);
+      gap: vw-s(27);
       border-radius: vw-s(10);
       padding: vw-s(40) vw-s(20) vw-s(30);
       margin-top: vw-s(20);
@@ -171,7 +172,7 @@
         padding-left: vw-min(15);
 
         @include mq('small') {
-          gap: vw-s(28);
+          gap: vw-s(3);
           margin-bottom: vw-s(6);
           padding: 0;
         }
@@ -190,6 +191,7 @@
             flex-direction: column;
             font-size: vw-s(20);
             gap: vw-s(13);
+            flex: 1;
           }
 
           &::before {
@@ -212,6 +214,8 @@
 
             @include mq('small') {
               gap: vw-s(13);
+              position: relative;
+              left: vw-s(9);
             }
 
             &::before {
@@ -238,6 +242,7 @@
         @include mq('small') {
           font-size: vw-s(30);
           letter-spacing: -0.05em;
+          margin-bottom: vw-s(10);
         }
 
       }
