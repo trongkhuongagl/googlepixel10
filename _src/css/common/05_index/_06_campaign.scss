@@ -27,6 +27,7 @@
     display: flex;
 
     @include mq('small') {
+      background-image: url('/special_contents/smartphone/pixel10/images/campaign_bg_01_sp.png');
       flex-direction: column;
       border-radius: vw-s(10);
       padding: vw-s(17) vw-s(17) vw-s(32) vw-s(17);
