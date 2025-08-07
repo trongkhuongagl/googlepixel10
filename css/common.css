@@ -418,14 +418,14 @@ sub {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: min(3.4722222222vw, 50px);
+  gap: min(2.0138888889vw, 29px);
 }
 .header_menu .list .item {
   display: inline-flex;
 }
 .header_menu .list .item:not(:first-child) {
   border-left: 2px solid #ECECEC;
-  padding-left: min(3.4722222222vw, 50px);
+  padding-left: min(2.0138888889vw, 29px);
 }
 .header_menu .list .link {
   font-size: min(1.1111111111vw, 16px);
@@ -487,7 +487,8 @@ sub {
 }
 
 .sec-webcm {
-  padding: min(6.9444444444vw, 100px) 0;
+  padding-top: min(7.5694444444vw, 109px);
+  padding-bottom: min(7.5694444444vw, 109px);
 }
 .sec-webcm .title,
 .sec-webcm .desc {
@@ -499,7 +500,7 @@ sub {
 }
 .sec-webcm .title {
   font-size: min(5.2777777778vw, 76px);
-  margin-bottom: min(1.25vw, 18px);
+  margin-bottom: min(2.3611111111vw, 34px);
 }
 .sec-webcm .desc {
   font-size: min(2.2222222222vw, 32px);

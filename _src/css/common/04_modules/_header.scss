@@ -41,12 +41,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: vw-min(50);
+      gap: vw-min(29);
       .item {
         display: inline-flex;
         &:not(:first-child) {
           border-left: 2px solid #ECECEC;
-          padding-left: vw-min(50);
+          padding-left: vw-min(29);
         }
       }
       .link {

@@ -3,7 +3,8 @@
 @use "common/00_base/_00_index" as *;
 
 .sec-webcm {
-  padding: vw-min(100) 0;
+  padding-top: vw-min(109);
+  padding-bottom: vw-min(109);
 
   @include mq('small') {
     padding-top: vw-s(46);
@@ -19,7 +20,7 @@
   }
   .title {
     font-size: vw-min(76);
-    margin-bottom: vw-min(18);
+    margin-bottom: vw-min(34);
 
     @include mq('small') {
       font-size: vw-s(55);
