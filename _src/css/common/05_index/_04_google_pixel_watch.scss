@@ -3,8 +3,10 @@
 @use "common/00_base/_00_index" as *;
 
 .sec-google-pixel-watch {
-  padding: vw-min(107) 0 vw-min(101);
+  padding-top: vw-min(104);
+  padding-bottom: vw-min(109);
   background-color: #F1F0FA;
+  scroll-margin-top: vw-min(72);
   position: relative;
 
   @include mq('small') {
@@ -15,17 +17,22 @@
   .title {
     .en {
       font-size: vw-min(92);
+      position: relative;
+      left: vw-min(-4);
+      top: vw-min(-3);
+
       @include mq('small') {
         font-size: vw-s(60);
+        position: static;
       }
     }
 
     width: vw-min(1200);
     font-size: vw-min(60);
     font-weight: 700;
-    line-height: 1.1;
+    line-height: 1.2;
     color: #202124;
-    margin: 0 auto vw-min(86);
+    margin: 0 auto vw-min(98);
 
     @include mq('small') {
       width: vw-s(370);
@@ -37,10 +44,10 @@
   }
 
   .bg-watch {
-    width: vw-min(450);
+    width: vw-min(473);
     position: absolute;
-    top: vw-min(5);
-    right: vw-min(-130);
+    top: vw-min(7);
+    right: vw-min(-131);
 
     @include mq('small') {
       position: static;
@@ -162,12 +169,16 @@
   }
 
   .notes-03 {
-    margin-bottom: vw-min(70);
+    margin-bottom: vw-min(67);
+
+    @include mq('small') {
+      margin-bottom: vw-s(30);
+    }
   }
 
   .banner {
     width: vw-min(940);
-    margin: 0 auto vw-min(48);
+    margin: 0 auto vw-min(50);
 
     @include mq('small') {
       width: vw-s(335);

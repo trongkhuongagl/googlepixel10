@@ -3,8 +3,8 @@
 @use "common/00_base/_00_index" as *;
 
 .sec-webcm {
-  padding-top: vw-min(109);
-  padding-bottom: vw-min(109);
+  padding-top: vw-min(112);
+  padding-bottom: vw-min(100);
 
   @include mq('small') {
     padding-top: vw-s(46);
@@ -30,7 +30,7 @@
   .desc {
     font-size: vw-min(32);
     font-weight: 700;
-    margin-bottom: vw-min(38);
+    margin-bottom: vw-min(48);
 
     @include mq('small') {
       font-size: vw-s(22);
@@ -49,13 +49,14 @@
 
   .swiper-slide {
     width: vw-min(800);
+    height: vw-min(445);
     display: flex;
     justify-content: center;
     align-items: center;
     background: #C4C4C4;
     font-size: vw-min(24);
-    border-radius: vw-min(10);
-    height: vw-min(445);
+    border-radius: vw-min(20);
+    overflow: hidden;
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
@@ -69,8 +70,8 @@
     }
 
     .icon {
-      width: vw-min(60);
-      height: vw-min(60);
+      width: vw-min(100);
+      height: vw-min(100);
       position: absolute;
       top: 50%;
       left: 50%;

@@ -3,8 +3,10 @@
 @use "common/00_base/_00_index" as *;
 
 .sec-google-pixel10 {
-  padding: vw-min(97) 0 vw-min(100);
+  padding-top: vw-min(106);
+  padding-bottom: vw-min(108);
   background-color: #E5EDF8;
+  scroll-margin-top: vw-min(72);
 
   @include mq('small') {
     padding-top: vw-s(60);
@@ -26,7 +28,7 @@
     text-align: center;
     color: #202124;
     line-height: 1.1;
-    margin: 0 auto vw-min(57);
+    margin: 0 auto vw-min(65);
 
     @include mq('small') {
       width: vw-s(335);
@@ -58,10 +60,10 @@
         height: vw-min(460);
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-start;
         gap: vw-min(80);
         border-radius: vw-min(10);
-        padding: vw-min(30);
+        padding: vw-min(100) vw-min(30) vw-min(30) vw-min(30);
         box-sizing: border-box;
         position: relative;
 
@@ -89,12 +91,12 @@
       .head-en {
         font-size: vw-min(50);
         color: #202124;
-        line-height: 1.3;
+        line-height: 1.1;
         text-align: center;
+        margin-bottom: vw-min(16);
 
         @include mq('small') {
           font-size: vw-s(40);
-          line-height: 1.1;
           margin-bottom: vw-s(4);
         }
       }
@@ -217,13 +219,11 @@
         display: block;
         position: absolute;
         width: vw-min(184);
-        height: vw-min(125);
         top: vw-min(17);
         right: vw-min(-40);
 
         @include mq('small') {
           width: vw-s(124);
-          height: vw-s(83);
           top: vw-s(26);
           right: vw-s(-14);
         }
@@ -292,6 +292,10 @@
 
   // Note 02
   .notes-02 {
-    margin-bottom: 40px;
+    margin-bottom: vw-min(53);
+
+    @include mq('small') {
+      margin-bottom: vw-s(25);
+    }
   }
 }

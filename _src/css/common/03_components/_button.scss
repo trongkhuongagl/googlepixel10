@@ -59,7 +59,7 @@
 // c-button02
 //
 .c-button02 {
-  width: vw-min(1200);
+  width: vw-min(1192);
   margin: 0 auto;
 
   @include mq('small') {
@@ -68,13 +68,18 @@
   &-title {
     font-size: vw-min(54);
     font-weight: 700;
-    line-height: 1.5;
+    line-height: 1.4;
     text-align: center;
     color: #202124;
-    margin-bottom: vw-min(25);
+    margin-bottom: vw-min(29);
 
     .en {
       font-weight: 500;
+      font-size: vw-min(60);
+
+      @include mq('small') {
+        font-size: vw-s(40);
+      }
     }
 
     @include mq('small') {
@@ -85,7 +90,7 @@
   }
   &-link {
     width: 100%;
-    height: vw-min(120);
+    height: vw-min(112);
     color: #fff;
     display: flex;
     justify-content: center;
@@ -159,20 +164,22 @@
     background-color: #0E3AEA;
     color: #DCFF9D;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: vw-min(40);
+    padding-left: vw-min(13);
     text-align: center;
     font-size: vw-min(30);
     font-weight: 700;
     line-height: vw-min(39);
     letter-spacing: -0.03em;
     position: absolute;
-    top: -100%;
-    right: vw-min(20);
+    top: calc(-100% + vw-min(16));
+    right: vw-min(16);
 
     @include mq('small') {
       width: vw-s(85);
       height: vw-s(85);
+      padding-top: vw-s(20);
+      padding-left: vw-s(7);
       font-size: vw-s(16);
       line-height: vw-s(18);
       letter-spacing: -0.05em;

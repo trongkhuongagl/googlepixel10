@@ -10,7 +10,7 @@
   background: #272727;
   color: #FFFFFF;
   text-align: center;
-  padding: vw-min(50) vw-min(10);
+  padding: vw-min(55) vw-min(10);
 
   @include mq('small') {
     text-align: left;
@@ -21,7 +21,7 @@
 .footer_nav {
   display: flex;
   justify-content: center;
-  gap: vw-min(20);
+  gap: vw-min(16);
 
   @include mq('small') {
     gap: vw-s(20);
@@ -51,8 +51,9 @@
     }
   }
 
-  font-size: vw-min(16);
-  line-height: 1.1;
+  font-size: vw-min(14);
+  letter-spacing: 0.8px;
+  line-height: 1;
 
   &:hover {
     text-decoration: underline;
@@ -60,7 +61,7 @@
 
   &:not(:first-of-type) {
     border-left: 1px solid #fff;
-    padding-left: vw-min(20);
+    padding-left: vw-min(22);
 
     @include mq('small') {
       border: none;
@@ -82,9 +83,9 @@
 }
 
 .footer_coryright {
-  font-size: vw-min(14);
+  font-size: vw-min(12);
   line-height: 1.1;
-  margin: vw-min(40) 0 0;
+  margin: vw-min(30) 0 0;
 
   @include mq('small') {
     @include fz-s(14);

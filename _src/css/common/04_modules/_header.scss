@@ -9,16 +9,16 @@
 
 .header {
   &.is-scale {
-    padding: vw-min(calc(26 * 0.7)) vw-min(calc(30 * 0.7)) vw-min(calc(25 * 0.7));
+    padding: vw-min(calc(25 * 0.7)) vw-min(calc(30 * 0.7));
     .header_logo {
-      width: vw-min(calc(148 * 0.7));
+      width: vw-min(calc(141 * 0.7));
     }
   }
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: vw-min(20);
-  padding: vw-min(26) vw-min(30) vw-min(25);
+  padding: vw-min(25) vw-min(30);
   position: fixed;
   top: 0;
   left: 0;
@@ -27,7 +27,7 @@
   z-index: 20;
   transition: all 0.3s;
   &_logo {
-    width: vw-min(148);
+    width: vw-min(141);
     transition: all 0.3s;
     flex-shrink: 0;
     img {
@@ -63,15 +63,15 @@
 
   @include mq('small') {
     &.is-scale {
-      padding: vw-s(calc(26 * 0.7)) vw-s(calc(30 * 0.7)) vw-s(calc(25 * 0.7));
+      padding: vw-s(calc(12 * 0.7));
       .header_logo {
-        width: vw-s(calc(148 * 0.7));
+        width: vw-s(calc(104 * 0.7));
       }
     }
-    padding: vw-s(26) vw-s(30) vw-s(25);
+    padding: vw-s(12);
     gap: vw-s(20);
     &_logo {
-      width: vw-s(148);
+      width: vw-s(104);
     }
   }
 }

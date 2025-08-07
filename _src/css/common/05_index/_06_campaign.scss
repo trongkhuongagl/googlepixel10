@@ -8,7 +8,8 @@
   &-inner {
     width: vw-min(1200);
     margin: 0 auto;
-    padding: vw-min(100) 0;
+    padding-top: vw-min(100);
+    padding-bottom: vw-min(102);
 
     @include mq('small') {
       width: 100%;
@@ -21,8 +22,8 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    border-radius: vw-min(10);
-    padding: vw-min(72) vw-min(96) vw-min(80) vw-min(47);
+    border-radius: vw-min(20);
+    padding: vw-min(72) vw-min(94) vw-min(80) vw-min(47);
     display: flex;
 
     @include mq('small') {
@@ -105,9 +106,11 @@
 
     .button {
       width: vw-min(400);
+      font-size: vw-min(18);
       
       @include mq('small') {
         width: vw-s(300);
+        font-size: vw-s(18);
       }
     }
   }
@@ -118,7 +121,7 @@
     gap: vw-min(100);
     background-color: rgba(204, 0, 51, .05);
     border-radius: vw-min(10);
-    padding: vw-min(80) vw-min(97) vw-min(80) vw-min(100);
+    padding: vw-min(82) vw-min(97) vw-min(80) vw-min(100);
     margin-top: vw-min(30);
 
     @include mq('small') {
@@ -164,11 +167,13 @@
         justify-content: center;
         align-items: center;
         gap: vw-min(60);
-        margin-bottom: vw-min(22);
+        margin-bottom: vw-min(15);
+        padding-left: vw-min(15);
 
         @include mq('small') {
           gap: vw-s(28);
           margin-bottom: vw-s(6);
+          padding: 0;
         }
 
         .item {
@@ -227,7 +232,8 @@
         font-size: vw-min(40);
         color: #CC0033;
         text-align: center;
-        margin-bottom: vw-min(9);
+        margin-bottom: vw-min(6);
+        padding-left: vw-min(25);
 
         @include mq('small') {
           font-size: vw-s(30);
@@ -240,9 +246,11 @@
         font-weight: 400;
         font-size: vw-min(14);
         text-align: center;
+        padding-left: vw-min(25);
 
         @include mq('small') {
           font-size: vw-s(10);
+          padding: 0;
         }
       }
     }
@@ -261,7 +269,8 @@
         letter-spacing: -0.03em;
         line-height: 1.4;
         margin-bottom: 0;
-        margin-top: vw-min(8);
+        margin-top: vw-min(4);
+        padding: 0;
 
         @include mq('small') {
           margin-top: vw-s(5);
@@ -270,6 +279,7 @@
 
       .desc {
         font-size: vw-min(18);
+        padding: 0;
 
         @include mq('small') {
           font-size: vw-s(18);
@@ -279,9 +289,11 @@
 
     .button {
       width: vw-min(400);
+      font-size: vw-min(18);
       
       @include mq('small') {
         width: vw-s(300);
+        font-size: vw-s(18);
       }
     }
   }

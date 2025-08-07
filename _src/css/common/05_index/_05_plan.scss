@@ -6,6 +6,7 @@
   background-color: #F6F6F6;
   padding-top: vw-min(100);
   padding-bottom: vw-min(100);
+  scroll-margin-top: vw-min(72);
 
   @include mq('small') {
     padding-top: vw-s(60);
@@ -17,8 +18,8 @@
     background-color: #FFFFFF;
     border: vw-min(6) solid #CC0033;
     border-radius: vw-min(20);
-    padding-top: vw-min(80);
-    padding-bottom: vw-min(60);
+    padding-top: vw-min(74);
+    padding-bottom: vw-min(55);
 
     @include mq('small') {
       width: vw-s(335);
@@ -30,7 +31,7 @@
   }
   .title {
     width: vw-min(1008);
-    margin: 0 auto vw-min(29);
+    margin: 0 auto vw-min(35);
 
     @include mq('small') {
       width: vw-s(304);
@@ -43,7 +44,7 @@
       letter-spacing: 0.03em;
       text-align: center;
       color: #000;
-      margin-bottom: vw-min(31);
+      margin-bottom: vw-min(42);
 
       @include mq('small') {
         font-size: vw-s(26);
