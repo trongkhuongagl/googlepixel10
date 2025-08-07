@@ -9,10 +9,12 @@
   gap: vw-min(20);
   width: fit-content;
   margin: vw-min(30) auto 0;
+  padding-bottom: vw-min(5);
 
   @include mq('small') {
     gap: vw-s(20);
     margin-top: vw-s(20);
+    padding-bottom: vw-s(5);
   }
   .swiper-button-next,
   .swiper-button-prev,
@@ -25,12 +27,16 @@
     &::after {
       font-size: 0;
     }
+    &:hover {
+      transform: scale(1.1);
+    }
     margin-top: 0;
     width: vw-min(60);
     height: vw-min(60);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transition: all 0.3s;
     user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;

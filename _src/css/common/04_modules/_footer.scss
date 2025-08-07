@@ -10,11 +10,11 @@
   background: #272727;
   color: #FFFFFF;
   text-align: center;
-  padding: vw-min(55) vw-min(10);
+  padding: vw-min(55) vw-min(10) vw-min(155);
 
   @include mq('small') {
     text-align: left;
-    padding: vw-s(30);
+    padding: vw-s(30) vw-s(30) vw-s(130) vw-s(30);
   }
 }
 

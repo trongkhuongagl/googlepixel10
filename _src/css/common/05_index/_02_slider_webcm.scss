@@ -4,11 +4,11 @@
 
 .sec-webcm {
   padding-top: vw-min(112);
-  padding-bottom: vw-min(100);
+  padding-bottom: vw-min(94);
 
   @include mq('small') {
-    padding-top: vw-s(46);
-    padding-bottom: vw-s(60);
+    padding-top: vw-s(52);
+    padding-bottom: vw-s(55);
   }
   .title,
   .desc {
@@ -24,7 +24,7 @@
 
     @include mq('small') {
       font-size: vw-s(55);
-      margin-bottom: vw-s(17);
+      margin-bottom: vw-s(30);
     }
   }
   .desc {
@@ -34,7 +34,7 @@
 
     @include mq('small') {
       font-size: vw-s(22);
-      margin-bottom: vw-s(34);
+      margin-bottom: vw-s(41);
     }
   }
   
