@@ -6,7 +6,7 @@
 // c-button01
 //
 .c-button01 {
-  width: fit-content;
+  width: vw-min(300);
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -27,7 +27,7 @@
     font-size: vw-s(18);
     border-radius: vw-s(50);
     gap: vw-s(15);
-    padding: vw-s(20);
+    padding: vw-s(20) vw-s(15);
   }
 
   &:hover {
@@ -67,32 +67,35 @@
   }
   &-title {
     font-size: vw-min(54);
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.5;
     text-align: center;
     color: #202124;
     margin-bottom: vw-min(25);
 
+    .en {
+      font-weight: 500;
+    }
+
     @include mq('small') {
       font-size: vw-s(40);
       line-height: 1.3;
-      margin-left: vw-s(-13);
-      margin-right: vw-s(-13);
-      margin-bottom: vw-s(24);
+      margin-bottom: vw-s(22);
     }
   }
   &-link {
     width: 100%;
-    height: vw-min(110);
+    height: vw-min(120);
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: vw-min(10);
+    gap: vw-min(15);
     font-size: vw-min(30);
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.1;
     border-radius: vw-min(100);
+    text-align: center;
     transition: all 0.3s;
     position: relative;
     z-index: 1;
@@ -103,8 +106,12 @@
       border-radius: vw-s(100);
       font-size: vw-s(24);
       line-height: vw-s(30);
-      text-align: center;
     }
+
+    .en {
+      font-weight: 500;
+    }
+
     &:hover {
       transform: scale(1.1);
     }
@@ -146,17 +153,19 @@
     &.is-lighter {
       background-color: #6155F7;
     }
-    width: vw-min(170);
-    height: vw-min(170);
+    width: vw-min(166);
+    height: vw-min(166);
     border-radius: 50%;
-    background-color: #0F3AE9;
-    color: #fff;
+    background-color: #0E3AEA;
+    color: #DCFF9D;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: vw-min(30);
-    line-height: 1.1;
+    font-weight: 700;
+    line-height: vw-min(39);
+    letter-spacing: -0.03em;
     position: absolute;
     top: -100%;
     right: vw-min(20);
@@ -165,11 +174,13 @@
       width: vw-s(85);
       height: vw-s(85);
       font-size: vw-s(16);
+      line-height: vw-s(18);
+      letter-spacing: -0.05em;
       top: vw-s(-43);
       right: vw-s(0);
     }
   }
-  &-bg {
+  &-shadow {
     content: '';
     display: block;
     width: 100%;

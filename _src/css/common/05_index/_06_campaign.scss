@@ -102,6 +102,14 @@
         }
       }
     }
+
+    .button {
+      width: vw-min(400);
+      
+      @include mq('small') {
+        width: vw-s(300);
+      }
+    }
   }
 
   .box-item-02 {
@@ -266,6 +274,14 @@
         @include mq('small') {
           font-size: vw-s(18);
         }
+      }
+    }
+
+    .button {
+      width: vw-min(400);
+      
+      @include mq('small') {
+        width: vw-s(300);
       }
     }
   }

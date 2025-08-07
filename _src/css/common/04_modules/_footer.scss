@@ -7,24 +7,24 @@
 //
 
 .footer {
-  background: #3C3C3C;
+  background: #272727;
   color: #FFFFFF;
   text-align: center;
-  padding: vw-min(86) vw-min(10);
+  padding: vw-min(50) vw-min(10);
 
   @include mq('small') {
     text-align: left;
-    padding: vw-s(59) vw-s(63) vw-s(59) vw-s(50);
+    padding: vw-s(30);
   }
 }
 
 .footer_nav {
   display: flex;
   justify-content: center;
-  gap: vw-min(40);
+  gap: vw-min(20);
 
   @include mq('small') {
-    gap: vw-s(33);
+    gap: vw-s(20);
     flex-direction: column;
     line-height: 1.5;
   }
@@ -35,27 +35,37 @@
     display: inline-block;
     width: vw-min(21);
     height: vw-min(15);
-    background-image: url("data:image/svg+xml,%3Csvg width='21' height='15' viewBox='0 0 21 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='3.8143' y='1' width='15.9714' height='9.8' stroke='white'/%3E%3Cpath d='M1 4.74268V13.9998H17.2' stroke='white'/%3E%3C/svg%3E%0A");
+    background-image: url("data:image/svg+xml,%3Csvg width='21' height='16' viewBox='0 0 21 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='4.70813' y='1' width='14.875' height='9.95312' stroke='white' stroke-width='2'/%3E%3Cpath d='M1 3.04688V15H17.875' stroke='white' stroke-width='2'/%3E%3C/svg%3E%0A");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: vw-min(10);
     position: relative;
-    top: vw-min(5);
+    top: vw-min(1);
 
     @include mq('small') {
       top: vw-s(1);
       width: vw-s(21);
-      height: vw-s(15);
+      height: vw-s(16);
+      margin-left: vw-s(5);
     }
   }
 
   font-size: vw-min(16);
   line-height: 1.1;
-  text-decoration: underline;
 
   &:hover {
-    text-decoration: none;
+    text-decoration: underline;
+  }
+
+  &:not(:first-of-type) {
+    border-left: 1px solid #fff;
+    padding-left: vw-min(20);
+
+    @include mq('small') {
+      border: none;
+      padding: 0;
+    }
   }
 
   @include mq('small') {
@@ -74,12 +84,11 @@
 .footer_coryright {
   font-size: vw-min(14);
   line-height: 1.1;
-  margin: vw-min(60) 0 0;
+  margin: vw-min(40) 0 0;
 
   @include mq('small') {
     @include fz-s(14);
-    margin-top: vw-s(53);
-    margin-left: vw-s(12);
+    margin-top: vw-s(20);
     white-space: nowrap;
   }
 }
