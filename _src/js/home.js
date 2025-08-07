@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   $('.js_slider_gg_pixel10').slick({
-    centerMode: true,
+    centerMode: false,
     slidesToShow: 1,
     infinite: true,
     dots: true,
