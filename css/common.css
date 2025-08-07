@@ -1585,7 +1585,7 @@ sub {
     padding: 17.3333333333vw 5.3333333333vw 16vw;
   }
   .sec-campaign .box-item-01 {
-    background-image: url("/special_contents/smartphone/pixel10/images/campaign_bg_01_sp.png");
+    background: #EFF5E5 url("/special_contents/smartphone/pixel10/images/campaign_bg_01_sp.png");
     flex-direction: column;
     border-radius: 2.6666666667vw;
     padding: 4.5333333333vw 4.5333333333vw 8.5333333333vw 4.5333333333vw;
