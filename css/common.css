@@ -1102,7 +1102,7 @@ sub {
   bottom: 0;
   left: 0;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.7019607843);
+  background-color: rgba(255, 255, 255, 0.7);
   width: 100%;
   height: min(7.6388888889vw, 110px);
   display: flex;
@@ -1704,7 +1704,7 @@ sub {
     padding: 0 2.6666666667vw;
   }
   .navi-under__btn {
-    width: 45.3333333333vw;
+    width: 45.8666666667vw;
     height: 21.3333333333vw;
     border-radius: 13.3333333333vw;
   }

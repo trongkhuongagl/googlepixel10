@@ -7,7 +7,7 @@
   bottom: 0;
   left: 0;
   z-index: 1000;
-  background-color: #ffffffb3;
+  background-color: rgb(255, 255, 255, 0.7);
   width: 100%;
   height: vw-min(110);
   display: flex;
@@ -45,7 +45,7 @@
   }
 
   @include mq('small') {
-    width: vw-s(170);
+    width: vw-s(172);
     height: vw-s(80);
     border-radius: vw-s(50);
   }
