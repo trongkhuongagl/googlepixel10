@@ -494,7 +494,7 @@ sub {
   background: #272727;
   color: #FFFFFF;
   text-align: center;
-  padding: min(3.8194444444vw, 55px) min(0.6944444444vw, 10px) min(10.7638888889vw, 155px);
+  padding: min(3.8194444444vw, 55px) min(0.6944444444vw, 10px) min(11.4583333333vw, 165px);
 }
 
 .footer_nav {
@@ -778,7 +778,7 @@ sub {
   width: min(15.9722222222vw, 230px);
   margin-top: auto;
 }
-.sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide-01 .head {
+.sec-google-pixel10 .slider-gg-pixel10-02 .slide-01 .head {
   width: min(15.9722222222vw, 230px);
   margin: 0 auto min(0.4861111111vw, 7px);
 }
@@ -1102,16 +1102,16 @@ sub {
   bottom: 0;
   left: 0;
   z-index: 1000;
-  background-color: rgba(78, 88, 235, 0.2);
+  background-color: rgba(255, 255, 255, 0.7019607843);
   width: 100%;
-  height: min(6.9444444444vw, 100px);
+  height: min(7.6388888889vw, 110px);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .navi-under__wrap {
-  width: min(69.4444444444vw, 1000px);
+  width: min(75vw, 1080px);
   display: flex;
   justify-content: space-between;
 }
@@ -1120,9 +1120,9 @@ sub {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: min(34.1666666667vw, 492px);
-  height: min(4.1666666667vw, 60px);
-  border-radius: min(3.125vw, 45px);
+  width: min(36.8055555556vw, 530px);
+  height: min(5.9722222222vw, 86px);
+  border-radius: min(3.4722222222vw, 50px);
   color: #fff;
   transition: all 0.3s;
 }
@@ -1133,7 +1133,7 @@ sub {
   width: min(1.3888888889vw, 20px);
 }
 .navi-under__btn--blue {
-  background-color: #4e58eb;
+  background-color: #0E3AEA;
 }
 .navi-under__btn--blue span::before {
   background-image: url("/special_contents/smartphone/pixel10/images/ico_fixbtn_device.svg");
@@ -1142,7 +1142,7 @@ sub {
   background-size: contain;
 }
 .navi-under__btn--pink {
-  background-color: #f66388;
+  background-color: #6155F6;
 }
 .navi-under__btn--pink span::before {
   background-image: url(/special_contents/smartphone/pixel10/images/ico_fixbtn_shop.svg);
@@ -1152,7 +1152,7 @@ sub {
 }
 
 .navi-under__btn--text {
-  font-size: min(1.3888888889vw, 20px);
+  font-size: min(1.5277777778vw, 22px);
   font-weight: 700;
   line-height: 1.2;
 }
@@ -1163,20 +1163,20 @@ sub {
 .navi-under__btn--text span::before {
   content: "";
   display: inline-block;
-  width: min(2.7777777778vw, 40px);
-  height: min(2.7777777778vw, 40px);
-  margin-right: min(0.6944444444vw, 10px);
+  width: min(2.9861111111vw, 43px);
+  height: min(2.9861111111vw, 43px);
+  margin-right: min(1.0416666667vw, 15px);
   vertical-align: middle;
 }
 .navi-under__btn--text span::after {
   content: "";
   display: inline-block;
-  width: min(1.3888888889vw, 20px);
+  width: min(1.4583333333vw, 21px);
   background-image: url("data:image/svg+xml,%3Csvg width='21' height='16' viewBox='0 0 21 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='4.70813' y='1' width='14.875' height='9.95312' stroke='white' stroke-width='2'/%3E%3Cpath d='M1 3.04688V15H17.875' stroke='white' stroke-width='2'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  margin-left: min(0.6944444444vw, 10px);
+  margin-left: min(1.0416666667vw, 15px);
   aspect-ratio: 21/16;
 }
 @media screen and (max-width: 767px) {
@@ -1314,7 +1314,7 @@ sub {
   }
   .footer {
     text-align: left;
-    padding: 9.0666666667vw 8vw 34.6666666667vw 8.8vw;
+    padding: 9.0666666667vw 8vw 37.3333333333vw 8.8vw;
   }
   .footer_nav {
     gap: 4.8vw;
@@ -1482,7 +1482,7 @@ sub {
   .sec-google-pixel10 .slider-gg-pixel10-02 .slide .button {
     width: 61.3333333333vw;
   }
-  .sec-google-pixel10 .slider-gg-pixel10-02 .swiper-slide-01 .head {
+  .sec-google-pixel10 .slider-gg-pixel10-02 .slide-01 .head {
     width: 41.0666666667vw;
     margin-bottom: 1.3333333333vw;
   }
@@ -1696,7 +1696,7 @@ sub {
     font-size: 4.8vw;
   }
   .navi-under {
-    height: 26.6666666667vw;
+    height: 29.3333333333vw;
   }
   .navi-under__wrap {
     width: 100%;
@@ -1716,8 +1716,8 @@ sub {
     font-size: 4.2666666667vw;
   }
   .navi-under__btn--text span::before {
-    width: 10.6666666667vw;
-    height: 10.6666666667vw;
+    width: 11.4666666667vw;
+    height: 11.4666666667vw;
     margin-right: 0.8vw;
   }
 }
