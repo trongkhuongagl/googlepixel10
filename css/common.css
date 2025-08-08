@@ -639,6 +639,9 @@ sub {
   width: min(83.3333333333vw, 1200px);
   margin: 0 min(1.0416666667vw, 15px);
 }
+.sec-google-pixel10 .slider-gg-pixel10 .slide .link:hover .button {
+  transform: scale(1.1);
+}
 .sec-google-pixel10 .slider-gg-pixel10 .slide .content {
   width: 100%;
   height: min(31.9444444444vw, 460px);
@@ -716,13 +719,18 @@ sub {
 }
 .sec-google-pixel10 .slider-gg-pixel10-02 .slide {
   width: min(34.7222222222vw, 500px);
-  min-height: min(56.9444444444vw, 820px);
   background: #FFFFFF;
   border-radius: min(1.3888888889vw, 20px);
-  padding: min(2.2222222222vw, 32px) min(3.4722222222vw, 50px) min(2.7777777778vw, 40px) min(3.4722222222vw, 50px);
+  margin: 0 min(1.0416666667vw, 15px);
+}
+.sec-google-pixel10 .slider-gg-pixel10-02 .slide .link {
   display: flex;
   flex-direction: column;
-  margin: 0 min(1.0416666667vw, 15px);
+  min-height: min(56.9444444444vw, 820px);
+  padding: min(2.2222222222vw, 32px) min(3.4722222222vw, 50px) min(2.7777777778vw, 40px) min(3.4722222222vw, 50px);
+}
+.sec-google-pixel10 .slider-gg-pixel10-02 .slide .link:hover .button {
+  transform: scale(1.1);
 }
 .sec-google-pixel10 .slider-gg-pixel10-02 .slide .head {
   font-weight: 700;
@@ -818,13 +826,18 @@ sub {
 }
 .sec-google-pixel-watch .slide {
   width: min(34.7222222222vw, 500px);
-  min-height: min(56.9444444444vw, 820px);
-  padding: min(2.2222222222vw, 32px) min(3.4722222222vw, 50px) min(2.7777777778vw, 40px) min(3.4722222222vw, 50px);
   border-radius: min(1.3888888889vw, 20px);
   background: #FFFFFF;
+  margin: 0 min(1.0416666667vw, 15px);
+}
+.sec-google-pixel-watch .slide .link {
+  min-height: min(56.9444444444vw, 820px);
+  padding: min(2.2222222222vw, 32px) min(3.4722222222vw, 50px) min(2.7777777778vw, 40px) min(3.4722222222vw, 50px);
   display: flex;
   flex-direction: column;
-  margin: 0 min(1.0416666667vw, 15px);
+}
+.sec-google-pixel-watch .slide .link:hover .button {
+  transform: scale(1.1);
 }
 .sec-google-pixel-watch .slide .head {
   font-weight: 700;
@@ -1435,10 +1448,12 @@ sub {
   }
   .sec-google-pixel10 .slider-gg-pixel10-02 .slide {
     width: 89.3333333333vw;
-    min-height: 173.0666666667vw;
-    padding: 5.3333333333vw 5.3333333333vw 8vw 5.3333333333vw;
     border-radius: 2.6666666667vw;
     margin: 0 2.6666666667vw;
+  }
+  .sec-google-pixel10 .slider-gg-pixel10-02 .slide .link {
+    min-height: 173.0666666667vw;
+    padding: 5.3333333333vw 5.3333333333vw 8vw 5.3333333333vw;
   }
   .sec-google-pixel10 .slider-gg-pixel10-02 .slide .head {
     font-size: 8vw;
@@ -1505,10 +1520,12 @@ sub {
   }
   .sec-google-pixel-watch .slide {
     width: 89.3333333333vw;
-    min-height: 173.0666666667vw;
-    padding: 5.3333333333vw 5.3333333333vw 7.4666666667vw 5.3333333333vw;
     border-radius: 2.6666666667vw;
     margin: 0 2.6666666667vw;
+  }
+  .sec-google-pixel-watch .slide .link {
+    min-height: 173.0666666667vw;
+    padding: 5.3333333333vw 5.3333333333vw 7.4666666667vw 5.3333333333vw;
   }
   .sec-google-pixel-watch .slide .head {
     font-size: 7.4666666667vw;
