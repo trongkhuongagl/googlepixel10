@@ -559,12 +559,6 @@ sub {
   margin-bottom: min(2.3611111111vw, 34px);
   color: #202124;
 }
-.sec-webcm .desc {
-  font-size: min(2.2222222222vw, 32px);
-  font-weight: 700;
-  margin-bottom: min(3.3333333333vw, 48px);
-  color: #3C4043;
-}
 .sec-webcm .slider-webcm {
   width: min(100vw, 1440px);
   margin: 0 auto;
@@ -577,20 +571,29 @@ sub {
 }
 .sec-webcm .slide {
   width: min(55.5555555556vw, 800px);
-  height: min(30.9027777778vw, 445px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #C4C4C4;
-  font-size: min(1.6666666667vw, 24px);
-  border-radius: min(1.3888888889vw, 20px);
-  overflow: hidden;
-  cursor: pointer;
   user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
   -webkit-tap-highlight-color: transparent;
   margin: 0 min(1.3888888889vw, 20px);
+}
+.sec-webcm .slide .head {
+  font-size: min(2.2222222222vw, 32px);
+  font-weight: 700;
+  margin-bottom: min(3.3333333333vw, 48px);
+  color: #3C4043;
+  text-align: center;
+}
+.sec-webcm .slide .content {
+  width: 100%;
+  height: min(30.9027777778vw, 445px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #C4C4C4;
+  border-radius: min(1.3888888889vw, 20px);
+  overflow: hidden;
+  cursor: pointer;
   position: relative;
 }
 .sec-webcm .slide .image {
@@ -1359,15 +1362,19 @@ sub {
     font-size: 14.6666666667vw;
     margin-bottom: 8vw;
   }
-  .sec-webcm .desc {
-    font-size: 5.8666666667vw;
-    margin-bottom: 10.9333333333vw;
-  }
   .sec-webcm .slider-webcm {
     width: 100vw;
   }
   .sec-webcm .slide {
     margin: 0 2.6666666667vw;
+  }
+  .sec-webcm .slide .head {
+    font-size: 5.8666666667vw;
+    margin-bottom: 10.9333333333vw;
+  }
+  .sec-webcm .slide .content {
+    height: 49.6vw;
+    border-radius: 1.3333333333vw;
   }
   .sec-webcm .slide .icon {
     width: 16vw;
@@ -1375,8 +1382,6 @@ sub {
   }
   .sec-webcm .slide {
     width: 89.3333333333vw;
-    height: 49.6vw;
-    border-radius: 1.3333333333vw;
   }
   .sec-google-pixel10 {
     padding-top: 11.7333333333vw;
