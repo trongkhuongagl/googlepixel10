@@ -225,11 +225,11 @@
       .link {
         display: flex;
         flex-direction: column;
-        min-height: vw-min(820);
+        min-height: vw-min(732);
         padding: vw-min(32) vw-min(50) vw-min(40) vw-min(50);
 
         @include mq('small') {
-          min-height: vw-s(649);
+          min-height: vw-s(572);
           padding: vw-s(20) vw-s(20) vw-s(30) vw-s(20);
         }
 

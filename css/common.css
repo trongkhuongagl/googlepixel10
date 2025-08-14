@@ -729,7 +729,7 @@ sub {
 .sec-google-pixel10 .slider-gg-pixel10-02 .slide .link {
   display: flex;
   flex-direction: column;
-  min-height: min(56.9444444444vw, 820px);
+  min-height: min(50.8333333333vw, 732px);
   padding: min(2.2222222222vw, 32px) min(3.4722222222vw, 50px) min(2.7777777778vw, 40px) min(3.4722222222vw, 50px);
 }
 .sec-google-pixel10 .slider-gg-pixel10-02 .slide .link:hover .button {
@@ -834,7 +834,7 @@ sub {
   margin: 0 min(1.0416666667vw, 15px);
 }
 .sec-google-pixel-watch .slide .link {
-  min-height: min(56.9444444444vw, 820px);
+  min-height: min(50.6944444444vw, 730px);
   padding: min(2.2222222222vw, 32px) min(3.4722222222vw, 50px) min(2.7777777778vw, 40px) min(3.4722222222vw, 50px);
   display: flex;
   flex-direction: column;
@@ -1138,40 +1138,56 @@ sub {
 .navi-under__btn--blue {
   background-color: #0E3AEA;
 }
-.navi-under__btn--blue span::before {
-  background-image: url("/special_contents/smartphone/pixel10/images/ico_fixbtn_device.svg");
+.navi-under__btn--blue .ico-link__blank {
+  margin-left: min(0.6944444444vw, 10px);
+}
+.navi-under__btn--blue .ico-link__blank::before {
+  width: min(1.7361111111vw, 25px);
+  height: min(2.6388888889vw, 38px);
+  background-image: url("data:image/svg+xml,%3Csvg width='25' height='38' viewBox='0 0 25 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.0416 37.6771H5.81812C2.72418 37.6771 0.211426 35.2768 0.211426 32.3214V5.66766C0.211426 2.71763 2.72418 0.317322 5.81812 0.317322H19.0416C22.1298 0.317322 24.6426 2.71763 24.6426 5.6731V32.3268C24.6426 35.2768 22.1298 37.6826 19.0416 37.6826V37.6771ZM5.81812 1.59095C3.4649 1.59095 1.55042 3.41975 1.55042 5.66766V32.3214C1.55042 34.5693 3.4649 36.3981 5.81812 36.3981H19.0416C21.3948 36.3981 23.3093 34.5693 23.3093 32.3214V5.66766C23.3093 3.41975 21.3948 1.59095 19.0416 1.59095H5.81812Z' fill='white'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
+  margin-right: min(1.7361111111vw, 25px);
+}
+.navi-under__btn--blue .ico-link__blank::after {
+  margin-left: min(1.0416666667vw, 15px);
 }
 .navi-under__btn--pink {
   background-color: #6155F6;
 }
-.navi-under__btn--pink span::before {
-  background-image: url(/special_contents/smartphone/pixel10/images/ico_fixbtn_shop.svg);
+.navi-under__btn--pink .ico-link__blank::before {
+  width: min(2.7083333333vw, 39px);
+  height: min(1.8055555556vw, 26px);
+  background-image: url("data:image/svg+xml,%3Csvg width='39' height='26' viewBox='0 0 39 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M38.3934 0.0658569C29.4625 0.0658569 20.5794 0.0658569 0.806024 0.0658569C0.469243 0.0658569 0.191895 0.346756 0.191895 0.694534V4.64048C0.191895 4.98157 0.469243 5.26247 0.806024 5.26247H1.57864V24.8183C1.57864 25.1594 1.85599 25.4403 2.19277 25.4403H36.9934C37.3302 25.4403 37.6075 25.1594 37.6075 24.8183V5.26247H38.3802C38.7169 5.26247 38.9943 4.98157 38.9943 4.64048V0.694534C38.9943 0.353444 38.7169 0.0725451 38.3802 0.0725451L38.3934 0.0658569ZM2.8135 5.26247H5.48793V24.1963H2.8135V5.26247ZM6.71619 24.1963V5.26247H14.964V24.1963H6.71619ZM36.3859 20.6517H30.0597V8.95427H36.3859V20.6517ZM28.8314 20.6517H23.5816V8.95427H28.8314V20.6517ZM22.3534 20.6517H16.1989V8.95427H22.3534V20.6517ZM16.1923 24.1963V21.8956H36.3859V24.1963H16.1923ZM36.3859 7.70361H16.1923V5.26247H36.3859V7.70361Z' fill='white'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
+  margin-right: min(1.1805555556vw, 17px);
+}
+.navi-under__btn--pink .ico-link__blank::after {
+  margin-left: min(1.0416666667vw, 15px);
 }
 
 .navi-under__btn--text {
   font-size: min(1.5277777778vw, 22px);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1;
 }
-.navi-under__btn--text span {
+.navi-under__btn--text .en {
+  font-size: min(1.6666666667vw, 24px);
+  line-height: 1;
+}
+.navi-under__btn--text .ico-link__blank {
   display: flex;
   align-items: center;
 }
-.navi-under__btn--text span::before {
+.navi-under__btn--text .ico-link__blank::before {
   content: "";
   display: inline-block;
-  width: min(2.9861111111vw, 43px);
-  height: min(2.9861111111vw, 43px);
-  margin-right: min(1.0416666667vw, 15px);
   vertical-align: middle;
 }
-.navi-under__btn--text span::after {
+.navi-under__btn--text .ico-link__blank::after {
   content: "";
   display: inline-block;
   width: min(1.4583333333vw, 21px);
@@ -1179,7 +1195,6 @@ sub {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  margin-left: min(1.0416666667vw, 15px);
   aspect-ratio: 21/16;
 }
 @media screen and (max-width: 767px) {
@@ -1457,7 +1472,7 @@ sub {
     margin: 0 2.6666666667vw;
   }
   .sec-google-pixel10 .slider-gg-pixel10-02 .slide .link {
-    min-height: 173.0666666667vw;
+    min-height: 152.5333333333vw;
     padding: 5.3333333333vw 5.3333333333vw 8vw 5.3333333333vw;
   }
   .sec-google-pixel10 .slider-gg-pixel10-02 .slide .head {
@@ -1529,7 +1544,7 @@ sub {
     margin: 0 2.6666666667vw;
   }
   .sec-google-pixel-watch .slide .link {
-    min-height: 173.0666666667vw;
+    min-height: 152.5333333333vw;
     padding: 5.3333333333vw 5.3333333333vw 7.4666666667vw 5.3333333333vw;
   }
   .sec-google-pixel-watch .slide .head {
@@ -1717,13 +1732,37 @@ sub {
     width: 4vw;
     margin-left: 2.1333333333vw;
   }
-  .navi-under__btn--text {
-    font-size: 4.2666666667vw;
+  .navi-under__btn--blue .ico-link__blank {
+    margin-left: 2.1333333333vw;
   }
-  .navi-under__btn--text span::before {
-    width: 11.4666666667vw;
-    height: 11.4666666667vw;
-    margin-right: 0.8vw;
+  .navi-under__btn--blue .ico-link__blank::before {
+    width: 6.6666666667vw;
+    height: 10.1333333333vw;
+    margin-right: 1.8666666667vw;
+  }
+  .navi-under__btn--blue .ico-link__blank::after {
+    margin-left: -1.0666666667vw;
+  }
+  .navi-under__btn--pink .ico-link__blank::before {
+    width: 10.4vw;
+    height: 6.9333333333vw;
+    margin-right: 1.3333333333vw;
+  }
+  .navi-under__btn--pink .ico-link__blank::after {
+    margin-left: 4vw;
+  }
+  .navi-under__btn--text {
+    font-size: 3.7333333333vw;
+    line-height: 1.4;
+  }
+  .navi-under__btn--text .en {
+    font-size: 4vw;
+  }
+  .navi-under__btn--text .ico-link__blank {
+    position: relative;
+  }
+  .navi-under__btn--text .ico-link__blank::after {
+    width: 4.2666666667vw;
   }
 }
 @media print, screen and (min-width: 768px) and (max-width: 1439px) {

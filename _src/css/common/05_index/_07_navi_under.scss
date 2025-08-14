@@ -61,24 +61,60 @@
 
   &--blue {
     background-color: #0E3AEA;
-    span {
+    .ico-link__blank {
+      margin-left: vw-min(10);
+      @include mq('small') {
+        margin-left: vw-s(8);
+      }
+
       &::before {
-        background-image: url('/special_contents/smartphone/pixel10/images/ico_fixbtn_device.svg');
+        width: vw-min(25);
+        height: vw-min(38);
+        background-image: url("data:image/svg+xml,%3Csvg width='25' height='38' viewBox='0 0 25 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.0416 37.6771H5.81812C2.72418 37.6771 0.211426 35.2768 0.211426 32.3214V5.66766C0.211426 2.71763 2.72418 0.317322 5.81812 0.317322H19.0416C22.1298 0.317322 24.6426 2.71763 24.6426 5.6731V32.3268C24.6426 35.2768 22.1298 37.6826 19.0416 37.6826V37.6771ZM5.81812 1.59095C3.4649 1.59095 1.55042 3.41975 1.55042 5.66766V32.3214C1.55042 34.5693 3.4649 36.3981 5.81812 36.3981H19.0416C21.3948 36.3981 23.3093 34.5693 23.3093 32.3214V5.66766C23.3093 3.41975 21.3948 1.59095 19.0416 1.59095H5.81812Z' fill='white'/%3E%3C/svg%3E%0A");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
+        margin-right: vw-min(25);
+
+        @include mq('small') {
+          width: vw-s(25);
+          height: vw-s(38);
+          margin-right: vw-s(7);
+        }
+      }
+      &::after {
+        margin-left: vw-min(15);
+        @include mq('small') {
+          margin-left: vw-s(-4);
+        }
       }
     }
   }
 
   &--pink {
     background-color: #6155F6;
-    span {
+    .ico-link__blank {
       &::before {
-        background-image: url(/special_contents/smartphone/pixel10/images/ico_fixbtn_shop.svg);
+        width: vw-min(39);
+        height: vw-min(26);
+        background-image: url("data:image/svg+xml,%3Csvg width='39' height='26' viewBox='0 0 39 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M38.3934 0.0658569C29.4625 0.0658569 20.5794 0.0658569 0.806024 0.0658569C0.469243 0.0658569 0.191895 0.346756 0.191895 0.694534V4.64048C0.191895 4.98157 0.469243 5.26247 0.806024 5.26247H1.57864V24.8183C1.57864 25.1594 1.85599 25.4403 2.19277 25.4403H36.9934C37.3302 25.4403 37.6075 25.1594 37.6075 24.8183V5.26247H38.3802C38.7169 5.26247 38.9943 4.98157 38.9943 4.64048V0.694534C38.9943 0.353444 38.7169 0.0725451 38.3802 0.0725451L38.3934 0.0658569ZM2.8135 5.26247H5.48793V24.1963H2.8135V5.26247ZM6.71619 24.1963V5.26247H14.964V24.1963H6.71619ZM36.3859 20.6517H30.0597V8.95427H36.3859V20.6517ZM28.8314 20.6517H23.5816V8.95427H28.8314V20.6517ZM22.3534 20.6517H16.1989V8.95427H22.3534V20.6517ZM16.1923 24.1963V21.8956H36.3859V24.1963H16.1923ZM36.3859 7.70361H16.1923V5.26247H36.3859V7.70361Z' fill='white'/%3E%3C/svg%3E%0A");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
+        margin-right: vw-min(17);
+
+        @include mq('small') {
+          width: vw-s(39);
+          height: vw-s(26);
+          margin-right: vw-s(5);
+        }
+      }
+
+      &::after {
+        margin-left: vw-min(15);
+        @include mq('small') {
+          margin-left: vw-s(15);
+        }
       }
     }
   }
@@ -87,28 +123,34 @@
 .navi-under__btn--text {
   font-size: vw-min(22);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1;
 
   @include mq('small') {
-    font-size: vw-s(16);
+    font-size: vw-s(14);
+    line-height: 1.4;
   }
 
-  span {
+  .en {
+    font-size: vw-min(24);
+    line-height: 1;
+
+    @include mq('small') {
+      font-size: vw-s(15);
+    }
+  }
+
+  .ico-link__blank {
     display: flex;
     align-items: center;
+
+    @include mq('small') {
+      position: relative;
+    }
 
     &::before {
       content: '';
       display: inline-block;
-      width: vw-min(43);
-      height: vw-min(43);
-      margin-right: vw-min(15);
       vertical-align: middle;
-      @include mq('small') {
-        width: vw-s(43);
-        height: vw-s(43);
-        margin-right: vw-s(3);
-      }
     }
 
     &::after {
@@ -119,8 +161,11 @@
       background-repeat: no-repeat;
       background-position: center center;
       background-size: contain;
-      margin-left: vw-min(15);
       aspect-ratio: 21 / 16;
+
+      @include mq('small') {
+        width: vw-s(16);
+      }
     }
   }
 }

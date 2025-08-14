@@ -89,13 +89,13 @@
     }
 
     .link {
-      min-height: vw-min(820);
+      min-height: vw-min(730);
       padding: vw-min(32) vw-min(50) vw-min(40) vw-min(50);
       display: flex;
       flex-direction: column;
 
       @include mq('small') {
-        min-height: vw-s(649);
+        min-height: vw-s(572);
         padding: vw-s(20) vw-s(20) vw-s(28) vw-s(20);
       }
 
