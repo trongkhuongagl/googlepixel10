@@ -25,7 +25,6 @@
     width: vw-min(1200);
     font-size: vw-min(60);
     font-weight: 700;
-    text-align: center;
     color: #202124;
     line-height: 1.1;
     margin: 0 auto vw-min(65);
@@ -226,7 +225,7 @@
         display: flex;
         flex-direction: column;
         min-height: vw-min(732);
-        padding: vw-min(32) vw-min(50) vw-min(40) vw-min(50);
+        padding: vw-min(35) vw-min(50) vw-min(40) vw-min(50);
 
         @include mq('small') {
           min-height: vw-s(572);
@@ -332,6 +331,17 @@
         @include mq('small') {
           width: vw-s(154);
           margin-bottom: vw-s(5);
+        }
+      }
+    }
+
+    .slide-02,
+    .slide-03,
+    .slide-04 {
+      .head {
+        margin-bottom: vw-min(19);
+        @include mq('small') {
+          margin-bottom: vw-s(10);
         }
       }
     }

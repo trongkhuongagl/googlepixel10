@@ -619,7 +619,6 @@ sub {
   width: min(83.3333333333vw, 1200px);
   font-size: min(4.1666666667vw, 60px);
   font-weight: 700;
-  text-align: center;
   color: #202124;
   line-height: 1.1;
   margin: 0 auto min(4.5138888889vw, 65px);
@@ -730,7 +729,7 @@ sub {
   display: flex;
   flex-direction: column;
   min-height: min(50.8333333333vw, 732px);
-  padding: min(2.2222222222vw, 32px) min(3.4722222222vw, 50px) min(2.7777777778vw, 40px) min(3.4722222222vw, 50px);
+  padding: min(2.4305555556vw, 35px) min(3.4722222222vw, 50px) min(2.7777777778vw, 40px) min(3.4722222222vw, 50px);
 }
 .sec-google-pixel10 .slider-gg-pixel10-02 .slide .link:hover .button {
   transform: scale(1.1);
@@ -784,6 +783,11 @@ sub {
 .sec-google-pixel10 .slider-gg-pixel10-02 .slide-01 .head {
   width: min(15.9722222222vw, 230px);
   margin: 0 auto min(0.4861111111vw, 7px);
+}
+.sec-google-pixel10 .slider-gg-pixel10-02 .slide-02 .head,
+.sec-google-pixel10 .slider-gg-pixel10-02 .slide-03 .head,
+.sec-google-pixel10 .slider-gg-pixel10-02 .slide-04 .head {
+  margin-bottom: min(1.3194444444vw, 19px);
 }
 .sec-google-pixel10 .notes-02 {
   margin-bottom: min(3.6805555556vw, 53px);
@@ -1505,6 +1509,11 @@ sub {
   .sec-google-pixel10 .slider-gg-pixel10-02 .slide-01 .head {
     width: 41.0666666667vw;
     margin-bottom: 1.3333333333vw;
+  }
+  .sec-google-pixel10 .slider-gg-pixel10-02 .slide-02 .head,
+  .sec-google-pixel10 .slider-gg-pixel10-02 .slide-03 .head,
+  .sec-google-pixel10 .slider-gg-pixel10-02 .slide-04 .head {
+    margin-bottom: 2.6666666667vw;
   }
   .sec-google-pixel10 .notes-02 {
     margin-bottom: 8.5333333333vw;
