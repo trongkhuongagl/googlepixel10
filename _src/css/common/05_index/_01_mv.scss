@@ -8,6 +8,10 @@
 .sec_mv {
   padding-top: vw-min(100);
 
+  .container {
+    max-width: 1200px;
+  }
+
   @include mq('small') {
     padding-top: vw-s(60);
   }

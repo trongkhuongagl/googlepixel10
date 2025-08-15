@@ -542,6 +542,9 @@ sub {
 .sec_mv {
   padding-top: min(6.9444444444vw, 100px);
 }
+.sec_mv .container {
+  max-width: 1200px;
+}
 
 .sec-webcm {
   padding-top: min(7.7777777778vw, 112px);
