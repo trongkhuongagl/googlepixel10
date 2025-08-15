@@ -813,8 +813,8 @@ sub {
 .sec-google-pixel-watch .bg-watch {
   width: min(32.8472222222vw, 473px);
   position: absolute;
-  top: min(0.4861111111vw, 7px);
-  right: min(-9.0972222222vw, -131px);
+  top: min(4.6527777778vw, 67px);
+  right: min(8.8194444444vw, 127px);
 }
 .sec-google-pixel-watch .slider-gg-pixel-watch {
   width: min(100vw, 1440px);
@@ -1531,7 +1531,7 @@ sub {
   .sec-google-pixel-watch .bg-watch {
     position: static;
     width: 81.0666666667vw;
-    margin: 0 auto -22.9333333333vw;
+    margin: 0 auto -18.6666666667vw;
   }
   .sec-google-pixel-watch .slider-gg-pixel-watch {
     width: 100vw;
