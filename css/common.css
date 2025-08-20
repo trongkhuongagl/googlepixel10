@@ -957,7 +957,7 @@ sub {
   width: min(83.3333333333vw, 1200px);
   margin: 0 auto;
   padding-top: min(6.9444444444vw, 100px);
-  padding-bottom: min(7.0833333333vw, 102px);
+  margin-bottom: min(7.0833333333vw, 102px);
 }
 .sec-campaign .box-item-01 {
   background-image: url("/special_contents/smartphone/pixel10/images/campaign_bg_01.png");
